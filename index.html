@@ -1,49 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Navbar Static top Template</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<html>
+    <head>
+        <script data-main="app" src="js/require.js"></script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <canvas id="myCanvas" width="400" height="100"
+style="border:1px solid #000000;">
+</canvas>
+        
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<body>
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
 
-<div class="container">
-  
-  
-  
-</div><!-- /.container -->
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+
+
+
+
+
+
+
+
+        <script>  require.config({
+			    baseUrl: './',
+			    // ...
+			    packages: [
+			        {
+			          name: 'physicsjs',
+			          location: 'js/physicsjs',
+			          main: 'physicsjs-0.6.0.min'
+			        }
+			    ],
+			    //...
+					});
+
+
+
+
+
+        	require([
+    'physicsjs',
+    'physicsjs/bodies/circle' // will mix into the PhysicsJS library
+], function( Physics ){
+
+    
+
+
+
+
+
+
+	var world = Physics();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Physics({
+    // set the timestep
+    timestep: 1000.0 / 160,
+    // maximum number of iterations per step
+    maxIPF: 16,
+    // set the integrator (may also be set with world.add())
+    integrator: 'verlet'
+}, function(world){
+    // use "world"
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// subscribe to the ticker
+Physics.util.ticker.on(function( time ){
+    world.step( time );
+});
+// start the ticker
+Physics.util.ticker.start();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var ball = Physics.body('circle', {
+    x: 50, // x-coordinate
+    y: 30, // y-coordinate
+    vx: 0.2, // velocity in x-direction
+    vy: 0.01, // velocity in y-direction
+    radius: 20
+});
+// add the circle to the world
+world.add( ball );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// add some gravity
+var gravity = Physics.behavior('constant-acceleration', {
+    acc: { x : 0, y: 0.0004 } // this is the default
+});
+world.add( gravity );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var renderer = Physics.renderer('canvas', {
+    el: 'element-id',
+    width: 500,
+    height: 300,
+    meta: false, // don't display meta data
+    styles: {
+        // set colors for the circle bodies
+        'circle' : {
+            strokeStyle: 'hsla(60, 37%, 17%, 1)',
+            lineWidth: 1,
+            fillStyle: 'hsla(60, 37%, 57%, 0.8)',
+            angleIndicator: 'hsla(60, 37%, 17%, 0.4)'
+        }
+    }
+});
+// add the renderer
+world.add( renderer );
+
+
+
+
+
+
+
+
+
+
+
+
+
+var renderer = Physics.renderer('canvas', {
+    //...
+});
+// add the renderer
+world.add( renderer );
+world.on('step', function(){
+    // Note: equivalent to just calling world.render() after world.step()
+    world.render();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Physics({
+    integrator: 'verlet'
+}, function(world){
+    // set up...
+});
+// equivalent to...
+Physics(function(world){
+    world.add( Physics.integrator('verlet') );
+    // set up...
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // do something fun with circles!
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+        	
+
+
+
+
+
+
+
+        </script>
+    </body>
 </html>
