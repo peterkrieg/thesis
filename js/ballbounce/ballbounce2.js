@@ -15,7 +15,7 @@ var vy = 0;  // initial vertical speed
 window.onload = init; 
  
 function init() {
-  setInterval(onEachStep, 1000/100); // 60 fps
+  setInterval(onEachStep, 1000/60); // 60 fps
 };
  
 function onEachStep() {

@@ -33,6 +33,12 @@ function onEachStep() {
 	for (var i=0; i<numBalls; i++){
 		var ball = balls[i];
 		ball.vy += g;     
+
+		if (ball.vx >0){   // while vx is still positive, decrease it incrementally to represent air resistance/friction
+    ball.vx -= .001;
+  } else{
+    ball.vx === 0;   // the instant vx is 0 or negative, it is set to 0 to stop the movement in x direction
+  }
 			
 		ball.x += ball.vx; 
 		ball.y += ball.vy; 
