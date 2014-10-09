@@ -126,15 +126,6 @@
 
 
 
-  // HERE IS AN ACTUAL EXAMPLE
-
-
-
-
-
-
-
-
 
 
 
@@ -173,7 +164,7 @@
     // constrain objects to these bounds
     world.add(Physics.behavior('edge-collision-detection', {
         aabb: viewportBounds,
-        restitution: 0.99,
+        restitution: .99,
         cof: 0.99
     }));
 
@@ -182,7 +173,7 @@
         Physics.body('circle', {
           x: 50, // x-coordinate
           y: 30, // y-coordinate
-          vx: 0.1, // velocity in x-direction
+          vx: 0.49, // velocity in x-direction
           vy: 0.01, // velocity in y-direction
           radius: 20
         })
@@ -193,6 +184,7 @@
 
     // add some gravity
     world.add( Physics.behavior('constant-acceleration') );
+
 
     // subscribe to ticker to advance the simulation
     Physics.util.ticker.on(function( time, dt ){
