@@ -43,24 +43,47 @@ context.moveTo(300, 300);
 context.lineTo(300, 600);
 context.stroke();
 
-setInterval(function(){context.clearRect(0, 0, 200, 500); }, 1000);
 
 context.clearRect(0, 0, canvas.width, canvas.height);
 
-context.moveTo(0, 0);
 
-for(var i = 0; i<1000; i++){
-  setInterval(function(){
-  	var x = 0;
-		var y = 0;
-		x+=2;
-		y+=2;
-		context.lineTo(x, y);
-		context.stroke();
-  }, 10);
+
+
+
+
+
+context.moveTo(0, 0);
+var x = 0;
+var y = 0;
+
+function init(){
+	setInterval(onEachStep, 1000/60);
+}
+
+
+
+function onEachStep(){
+	context.lineTo(x, y);
+	context.stroke()
+	x+=2;
+	if(y<100){
+		y+= .0003*(x*x);
+	}
+	else if (y<200){
+		y+= 1;
+ 	}
+ 	else if (y<600){
+ 		y+= 2.5;
+ 	}
+ 
 	
 
 }
+
+init();
+
+
+
 
 
 
