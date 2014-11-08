@@ -10,7 +10,7 @@ var g = 0.1;
 var radius = 20;
 var color = "#0000ff";
 var balls;
-var numBalls = 5;
+var numBalls = 10;
  
 window.onload = init; 
  
