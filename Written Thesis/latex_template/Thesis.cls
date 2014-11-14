@@ -65,7 +65,7 @@
   \space \number\year}
 \usepackage{setspace}
 \onehalfspacing
-\setlength{\parindent}{0pt}
+%\setlength{\parindent}{0pt}    %commented out so the paragraph has an indent
 \setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
 \usepackage{vmargin}
 
