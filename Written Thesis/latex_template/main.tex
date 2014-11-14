@@ -32,6 +32,17 @@
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
 \usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\usepackage{caption}
+\DeclareCaptionFont{black}{\color{black}}
+\DeclareCaptionFormat{listing}{\parbox{\textwidth}{#1#2#3}}
+\captionsetup[lstlisting]{format=listing,labelfont=black,textfont=black}
+
+
+
 \hypersetup{urlcolor=black, colorlinks=false} % Colors hyperlinks in blue - change to black if annoying
 
 \title{\ttitle} % Defines the thesis title - don't touch this
@@ -248,7 +259,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 \pagestyle{empty} % Page style needs to be empty for this page
 
-\dedicatory{Dedicated to Parents} % Dedication text
+\dedicatory{Dedicated to my parents} % Dedication text
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
@@ -262,6 +273,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
+
 
 \input{Chapters/Chapter1}
 %\input{Chapters/Chapter2} 
