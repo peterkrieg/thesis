@@ -1,14 +1,76 @@
 % Introduction
 
-\chapter*{INtroduction}
+\chapter*{Introduction}
 \label{intro} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 \lhead{Introduction \emph{Presenting the canvas, etc}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 
-\section{Welcome and Thank You}
-Welcome to this \LaTeX{} Thesis Template, a beautiful and easy to use template for writing a thesis using the \LaTeX{} typesetting system.
+\section{What is a physics simulation?}
+
+\hspace{.5cm} The purpose of this thesis is to present a series of physics simulations, each modeling a specific problem of physics as realistically as possible.  These simulations differ from \textit{animations}, which can be seen as predictable representations that always display the same visual.  Simulations need to adapt to variable conditions, and be based partly on random processes.    
+
+
+To program the simulations in this thesis, I chose to write the code in javascript.  This scripting language is easy to view in any modern browser: therefore, all the simulations of this thesis can be viewed online.  I have put the entire thesis and its simulations on my personal website, which can be found at:  http://www.peterkrieg.com/thesis
+
+Javascript combines seamlessly with HTML5, which is why I mostly decided to use it for this thesis.  The evolution of HTML (HyperText Markup Language) has progressed from simple web documents to complex web applications.  For this thesis, every simulation utilizes the HTML5 \textless canvas\textgreater element, which has been used since around 2011.  The HTML5 canvas API allows programmers to write javascript code that accesses the element and run visual displays through a web browser  The HTML needed to include a canvas can seen below:
+
+
+
+\vspace{1cm}
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption= The bare bones code necessary for an HTML document to include the canvas element, label=lst:basichtml]
+<!doctype html>
+<html>
+ <body>
+  <canvas id="canvas" width="500" height="500" >  
+ </body>
+ <script>
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+ </script>
+</html>
+
+\end{lstlisting}
+\setstretch{2}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{Figures/frames.png}
+
+	\caption{The frames of a general simulation}
+	\label{fig:frames}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %----------------------------------------------------------------------------------------

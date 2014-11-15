@@ -66,7 +66,7 @@
 \usepackage{setspace}
 \onehalfspacing
 %\setlength{\parindent}{0pt}    %commented out so the paragraph has an indent
-\setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
+%\setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}   commnted out so paragraph doens't have space in between
 \usepackage{vmargin}
 
 \RequirePackage[utf8]{inputenc} % Allows the use of international characters (e.g. Umlauts)
