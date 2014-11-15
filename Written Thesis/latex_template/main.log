@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 NOV 2014 22:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 NOV 2014 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -705,32 +705,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 46.
 
-(./main.aux
-
-LaTeX Warning: Label `FillingFile' multiply defined.
-
-
-LaTeX Warning: Label `ThesisConventions' multiply defined.
-
-
-LaTeX Warning: Label `fig:Electron' multiply defined.
-
-
-LaTeX Warning: Label `eqn:Einstein' multiply defined.
-
-
-LaTeX Warning: Label `FillingFile' multiply defined.
-
-
-LaTeX Warning: Label `ThesisConventions' multiply defined.
-
-
-LaTeX Warning: Label `fig:Electron' multiply defined.
-
-
-LaTeX Warning: Label `eqn:Einstein' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -753,7 +728,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
@@ -802,7 +778,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 90.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=288, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=111, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -833,18 +809,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./main.toc [3
-
-
-])
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4]
+ [3
+
+
+]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[5
+[4
 
 ] (./Chapters/Introduction.tex
 Chapter 1.
@@ -890,104 +866,29 @@ Package natbib Warning: Citation `Reference1' on page 9 undefined on input line
 Package natbib Warning: Citation `Reference3' on page 9 undefined on input line
  197.
 
-[9] <Figures/Electron.pdf, id=456, 398.3386pt x 284.52756pt>
+[9] <Figures/Electron.pdf, id=231, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf used on input line 219.
 (pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
  [10 <./Figures/Electron.pdf>] [11])
-(./Chapters/Chapter1.tex [12]
-Chapter 2.
-------------------------------------------------------------------------------
- 2 Chapter 1 TITLE GOES HERE!!
-------------------------------------------------------------------------------
-[13
-
-]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 78--78
- []$[]$  
- []
-
-[14] [15] [16] [17] [18] [19] [20] [21]
-
-Package natbib Warning: Citation `Reference3' on page 22 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Reference2' on page 22 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Reference1' on page 22 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Reference2' on page 22 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Reference1' on page 22 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Reference3' on page 22 undefined on input lin
-e 263.
-
-[22]
-File: Figures/Electron.pdf Graphic file (type pdf)
- <use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 285.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [23] [24]) (./Chapters/Chapter2.tex [25]
-Chapter 3.
-------------------------------------------------------------------------------
- 3 Chapter 2 TITLE!!!!
-------------------------------------------------------------------------------
-[26
-
-] [27] [28] [29] [30] [31] [32] [33]
-
-Package natbib Warning: Citation `Reference3' on page 34 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Reference2' on page 34 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Reference1' on page 34 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Reference2' on page 34 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Reference1' on page 34 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Reference3' on page 34 undefined on input lin
-e 197.
-
-[34]
-File: Figures/Electron.pdf Graphic file (type pdf)
- <use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 219.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [35] [36]) (./Appendices/AppendixA.tex [37]
+(./Appendices/AppendixA.tex [12]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [38
+[13
 
-]
+]) [14]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
 No file main.bbl.
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 42.
+See the caption package documentation for explanation.
+
 
 Package natbib Warning: There were undefined citations.
 
@@ -997,21 +898,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 16A31B7A5CE30EE836E37E0D2D2B15E0;13529.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 5D50543BC53BA0F514C1CEADE8D72B8C;4843.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
  ) 
 Here is how much of TeX's memory you used:
- 13924 strings out of 493315
- 192472 string characters out of 6137904
- 431899 words of memory out of 5000000
- 17003 multiletter control sequences out of 15000+600000
- 20474 words of font info for 78 fonts, out of 8000000 for 9000
+ 13489 strings out of 493315
+ 188413 string characters out of 6137904
+ 263620 words of memory out of 5000000
+ 16694 multiletter control sequences out of 15000+600000
+ 20306 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,11n,45p,780b,1854s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,45p,780b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1029,12 +926,11 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (44 pages, 521961 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (19 pages, 440874 bytes).
 PDF statistics:
- 838 PDF objects out of 1000 (max. 8388607)
- 754 compressed objects within 8 object streams
- 169 named destinations out of 1000 (max. 500000)
- 571 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
