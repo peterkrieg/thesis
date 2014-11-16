@@ -6,7 +6,7 @@
 \vspace {1em}
 \contentsline {chapter}{Contents}{v}{dummy.4}
 \vspace {1em}
-\contentsline {chapter}{Abbreviations}{vii}{dummy.6}
+\contentsline {chapter}{Abbreviations}{vi}{dummy.6}
 \vspace {2em}
 \hspace {-2em}
 \textbf {Introduction}
@@ -14,28 +14,8 @@
 \contentsline {section}{\numberline {0.2}Methods of Producing a Simulation}{2}{section.11}
 \contentsline {subsection}{\numberline {0.2.1}The Code}{3}{subsection.13}
 \contentsline {chapter}{\numberline {1}Some Basic Simulations}{5}{chapter.26}
-\contentsline {section}{\numberline {1.1}Welcome and Thank You}{5}{section.27}
-\contentsline {section}{\numberline {1.2}Learning \LaTeX {}}{7}{section.72}
-\contentsline {subsection}{\numberline {1.2.1}A (not so short) Introduction to \LaTeX {}}{7}{subsection.73}
-\contentsline {subsection}{\numberline {1.2.2}A Short Math Guide for \LaTeX {}}{8}{subsection.74}
-\contentsline {subsection}{\numberline {1.2.3}Common \LaTeX {} Math Symbols}{8}{subsection.75}
-\contentsline {subsection}{\numberline {1.2.4}\LaTeX {} on a Mac}{8}{subsection.76}
-\contentsline {section}{\numberline {1.3}Getting Started with this Template}{9}{section.77}
-\contentsline {subsection}{\numberline {1.3.1}About this Template}{9}{subsection.78}
-\contentsline {section}{\numberline {1.4}What this Template Includes}{10}{section.79}
-\contentsline {subsection}{\numberline {1.4.1}Folders}{10}{subsection.80}
-\contentsline {subsection}{\numberline {1.4.2}Files}{11}{subsection.81}
-\contentsline {section}{\numberline {1.5}Filling in the `\texttt {Thesis.cls}' File}{13}{section.82}
-\contentsline {section}{\numberline {1.6}The `\texttt {Thesis.tex}' File Explained}{14}{section.83}
-\contentsline {section}{\numberline {1.7}Thesis Features and Conventions}{15}{section.84}
-\contentsline {subsection}{\numberline {1.7.1}Printing Format}{15}{subsection.85}
-\contentsline {subsection}{\numberline {1.7.2}Using US Letter Paper}{16}{subsection.86}
-\contentsline {subsection}{\numberline {1.7.3}References}{17}{subsection.87}
-\contentsline {subsection}{\numberline {1.7.4}Figures}{18}{subsection.89}
-\contentsline {subsection}{\numberline {1.7.5}Typesetting mathematics}{19}{subsection.91}
-\contentsline {section}{\numberline {1.8}Sectioning and Subsectioning}{20}{section.93}
-\contentsline {section}{\numberline {1.9}In Closing}{21}{section.94}
+\contentsline {section}{\numberline {1.1}Basic Ball Bouncing}{5}{section.27}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{22}{appendix.95}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{9}{appendix.126}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{24}{dummy.96}
+\contentsline {chapter}{Bibliography}{11}{dummy.127}

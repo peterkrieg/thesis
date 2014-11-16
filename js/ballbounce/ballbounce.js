@@ -28,7 +28,7 @@ function onEachStep() {
   // }
   if (y > canvas.height - radius){ // if ball hits the ground
     y = canvas.height - radius; // reposition it at the ground
-    vy *= -0.7; // then reverse and reduce its vertical speed
+    vy *= -0.8; // then reverse and reduce its vertical speed
   }
   if (x > canvas.width - radius){ // if ball hits right wall
     x = canvas.width - radius; // reposition it right at wall 
