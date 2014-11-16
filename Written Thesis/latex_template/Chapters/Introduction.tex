@@ -7,20 +7,54 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{What is a physics simulation?}
+\section{What is a Physics Simulation?}
 
-\hspace{.5cm} The purpose of this thesis is to present a series of physics simulations, each modeling a specific problem of physics as realistically as possible.  These simulations differ from \textit{animations}, which can be seen as predictable representations that always display the same visual.  Simulations need to adapt to variable conditions, and be based partly on random processes.    
+\hspace{.5cm} The purpose of this thesis is to present a series of physics simulations, each modeling a specific problem of physics as realistically as possible.  These simulations differ from \textit{animations}, which can be seen as predictable representations that always display the same visual.  Animations are analagous to a movie script: no matter how many times you watch the movie, it will always end in the same way.  Simulations, on the other hand, need to adapt to variable conditions, and be based partly on random processes.  This brings up the topic of \textit{dynamic} vs. \textit{static} animation.  Most of the physics simulations in this thesis will be dyamic because they present a unique viewing each time they are run, and can also involve user feedback which influences the outcome of the simulation.
+
+Any simulation requires creating the illusion of motion.  Almost every form of projected motion media uses frames to accomplish this.  Researchers have shown that to make the simulation look realistic, it must be presented at a rate of around 60-100 frames per second.  Anything far slower than this, and the human eye will detect the ``choppiness'' of the simulation.  People can't detect anything much faster than 100 frames per second, so there is no need to project media faster than that, with the exception of slow-motion videography.  
 
 
-To program the simulations in this thesis, I chose to write the code in javascript.  This scripting language is easy to view in any modern browser: therefore, all the simulations of this thesis can be viewed online.  I have put the entire thesis and its simulations on my personal website, which can be found at:  http://www.peterkrieg.com/thesis
 
-Javascript combines seamlessly with HTML5, which is why I mostly decided to use it for this thesis.  The evolution of HTML (HyperText Markup Language) has progressed from simple web documents to complex web applications.  For this thesis, every simulation utilizes the HTML5 \textless canvas\textgreater element, which has been used since around 2011.  The HTML5 canvas API allows programmers to write javascript code that accesses the element and runs visual displays through a web browser  The HTML needed to include a canvas can seen below:
+
+%----------------------------------------------------------------------------------------
+
+
+\section{Methods of Producing a Simulation}
+
+The physics simulations in this thesis differ greatly from common animations.  Movies and cartoons, for example, operate by displaying a series of images similar to one another, and displaying them as many frames per second to create the illusion of motion.  My simulations, on the other hand, function by providing the \textit{information} for each frame, and then providing the data for \textit{how} the animation can be created.  These instructions are passed onto the HTML5 canvas API, which creates the visual which can be seen in the web browser.  Because physics simulations contain instructions instead of a series of images, the files of code take up far less space than a movie file would, for example.  This is one primary advantage of coded simulations.  Every simulation follows a similar set of steps, which can be simplified below: 
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=15cm]{Figures/frames.png}
+
+	\caption{The frames of a general simulation}
+	\label{fig:frames}
+\end{figure}
+
+
+The canvas API gets the initial state of the simulation, which could the position of a ball, for example.  Then, the frame is \textit{rendered} by applying rules to the canvas element, and changing the initial state of the simulation.  Once the rules have been applied, and all conditions are satisfied, the frame is rendered, and then displayed on the canvas element, to be seen in the web browser.  
+
+To produce any realistic simulation, the steps in figure \ref{fig:frames} must be repeated multiple times per second.  In fact, these steps must be repeated 60 times per second to achieve the desired 60 frames per second outlined in the previous section.  Luckily, the canvas API is capable of running the instructions very quickly to make this simulation possible.  
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+\subsection{The Code}
+
+To program the simulations in this thesis, I chose to write the code in javascript.  This scripting language is easy to view in any modern browser: therefore, all the simulations of this thesis can be viewed online.  Javascript combines seamlessly with HTML5, which is why I mostly decided to use it for this thesis.  The evolution of HTML (HyperText Markup Language) has progressed from simple web documents to complex web applications.  For this thesis, every simulation utilizes the HTML5 \textless canvas\textgreater element, which has been used since around 2011.  The HTML5 canvas API allows programmers to write javascript code that accesses the element and runs visual displays through a web browser  The HTML needed to include a canvas can seen below:
 
 
 
 \vspace{1cm}
 \setstretch{1}
-\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption= The bare bones code necessary for an HTML document to include the canvas element, label=lst:basichtml]
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption= The bare bones code necessary for an HTML document to include the canvas element, label=lst:basichtml]  
 <!doctype html>
 <html>
  <body>
@@ -35,79 +69,12 @@ Javascript combines seamlessly with HTML5, which is why I mostly decided to use 
 \end{lstlisting}
 \setstretch{2}
 
-The above code displays the most basic HTML combined with javascript necessary to begin any simulation.  Lines 7-8 are the only ones that actually contain javascript: this is the simple step necessary for the canvas API to recognize the HTML document.  All web browsers include some form of javascript interpreter: whenever the browser encounters a \textless script \textgreater element, it \" passes \" the code onto the JS 
+The above code displays the most basic HTML combined with javascript necessary to begin any simulation.  Lines 7-8 are the only ones that actually contain javascript: this is the simple step necessary for the canvas API to recognize the HTML document.  These two steps are necessary for any physics simulation.  The step on line 7 initializes a JS variable and sets it equal to the canvas element on the web document object.  The second step 
+
+All web browsers include some form of javascript interpreter: whenever the browser encounters a \textless script \textgreater element, it     ``passes''  the code onto the JS interpreter.  In listing \ref{lst:basichtml}, the HTML and JS code are written in the same document for clarity.  While this is an acceptable practice, all future simulations will involve the HTML referencing to external JS documents to keep the contents separate.  
+
+While this thesis can contain code excerpts, figures, and screen-shots of various simulations, it obviously can't contain the flow of images itself.  Therefore, I have put the entire thesis and its simulations on my personal website, which can be found at:  http://www.peterkrieg.com/thesis.  You can navigate by each chapter and view the simulations outlined in thesis.
 
 
 
-
-
-
-
-
-
-
-
-
-\begin{figure}[h]
-	\centering
-		\includegraphics[width=15cm]{Figures/frames.png}
-
-	\caption{The frames of a general simulation}
-	\label{fig:frames}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-
-\section{Learning \LaTeX{}}
-
-\LaTeX{} is not a WYSIWYG (What You See is What You Get) program, unlike word processors such as Microsoft Word or Apple's Pages. Instead, a document written for \LaTeX{} is actually a simple, plain text file that contains \emph{no formatting}. You tell \LaTeX{} how you want the formatting in the finished document by writing in simple commands amongst the text, for example, if I want to use \textit{italic text for emphasis}, I write the `$\backslash$\texttt{textit}\{\}' command and put the text I want in italics in between the curly braces. This means that \LaTeX{} is a ``mark-up'' language, very much like HTML.
-
-\subsection{A (not so short) Introduction to \LaTeX{}}
-
-If you are new to \LaTeX{}, there is a very good eBook -- freely available online as a PDF file -- called, ``The Not So Short Introduction to \LaTeX{}''. The book's title is typically shortened to just ``lshort''. You can download the latest version (as it is occasionally updated) from here:\\
-\href{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}{\texttt{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}}
-
-It is also available in several other languages. Find yours from the list on this page:\\
-\href{http://www.ctan.org/tex-archive/info/lshort/}{\texttt{http://www.ctan.org/tex-archive/info/lshort/}}
-
-It is recommended to take a little time out to learn how to use \LaTeX{} by creating several, small `test' documents. Making the effort now means you're not stuck learning the system when what you \emph{really} need to be doing is writing your thesis.
-
-\subsection{A Short Math Guide for \LaTeX{}}
-
-If you are writing a technical or mathematical thesis, then you may want to read the document by the AMS (American Mathematical Society) called, ``A Short Math Guide for \LaTeX{}''. It can be found online here:\\
-\href{http://www.ams.org/tex/amslatex.html}{\texttt{http://www.ams.org/tex/amslatex.html}}\\
-under the ``Additional Documentation'' section towards the bottom of the page.
-
-\subsection{Common \LaTeX{} Math Symbols}
-There are a multitude of mathematical symbols available for \LaTeX{} and it would take a great effort to learn the commands for them all. The most common ones you are likely to use are shown on this page:\\
-\href{http://www.sunilpatel.co.uk/latexsymbols.html}{\texttt{http://www.sunilpatel.co.uk/latexsymbols.html}}
-
-You can use this page as a reference or crib sheet, the symbols are rendered as large, high quality images so you can quickly find the \LaTeX{} command for the symbol you need.
-
-\subsection{\LaTeX{} on a Mac}
- 
-The \LaTeX{} package is available for many systems including Windows, Linux and Mac OS X. The package for OS X is called MacTeX and it contains all the applications you need -- bundled together and pre-customised -- for a fully working \LaTeX{} environment and workflow.
- 
-MacTeX includes a dedicated \LaTeX{} IDE (Integrated Development Environment) called ``TeXShop'' for writing your `\texttt{.tex}' files and ``BibDesk'': a program to manage your references and create your bibliography section just as easily as managing songs and creating playlists in iTunes.
-
-%----------------------------------------------------------------------------------------
 
