@@ -6,10 +6,10 @@ canvas.width = screen.width -100;
 
 var radius = 20;
 var color = "red";
-var g = .15; // acceleration due to gravity
-var x = 50;  // initial horizontal position
-var y = 50;  // initial vertical position
-var vx = 2;  // initial horizontal speed
+var g = .1635; // acceleration due to gravity
+var x = 40;  // initial horizontal position
+var y = 40;  // initial vertical position
+var vx = parseFloat(prompt('what is the initial horizontal speed of ball you would like?(recommended values of 1-20'));  // initial horizontal speed 
 var vy = 0;  // initial vertical speed
  
 window.onload = init; 
@@ -20,22 +20,23 @@ function init() {
  
 function onEachStep() {
   vy += g; // gravity increases the vertical speed
-
-  if (vx >0){   // while vx is still positive, decrease it incrementally to represent air resistance/friction
-    vx -= .001;
-  } else{
-    vx === 0;   // the instant vx is 0 or negative, it is set to 0 to stop the movement in x direction
-  }
-
   x += vx; // horizontal speed increases horizontal position 
   y += vy; // vertical speed increases vertical position
- 
+
+  // if(y > canvas.height -radius*1.01 && y < canvas.height - radius*.99){
+  //   vx *= .99; // friction between floor and ball
+  // }
   if (y > canvas.height - radius){ // if ball hits the ground
     y = canvas.height - radius; // reposition it at the ground
-    vy *= -0.9; // then reverse and reduce its vertical speed
+    vy *= -0.7; // then reverse and reduce its vertical speed
   }
-  if (x > canvas.width + radius){ // if ball goes beyond canvas
-    x = -radius; // wrap it around 
+  if (x > canvas.width - radius){ // if ball hits right wall
+    x = canvas.width - radius; // reposition it right at wall 
+    vx *= -0.8;  // then reduce and reverse horizontal speed
+  }
+  if (x < radius){  // if ball hits left wall
+    x = radius;  // reposition it right at wall
+    vx *= -0.8  // then reverse and reduce horizontal speed
   }
   drawBall(); // draw the ball
 };
