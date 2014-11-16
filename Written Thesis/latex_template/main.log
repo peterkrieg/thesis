@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 NOV 2014 21:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 NOV 2014 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -778,7 +778,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 90.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=155, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=135, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -841,91 +841,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 
 
 ]
-<Figures/frames.png, id=256, 701.62125pt x 157.58875pt>
+<Figures/frames.png, id=231, 701.62125pt x 157.58875pt>
 File: Figures/frames.png Graphic file (type png)
 
 <use Figures/frames.png>
-Package pdftex.def Info: Figures/frames.png used on input line 23.
+Package pdftex.def Info: Figures/frames.png used on input line 28.
 (pdftex.def)             Requested size: 426.79134pt x 95.86208pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 23--24
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 36.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 51.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 36.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
  [2 <./Figures/frames.png>]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 54--54
+Overfull \hbox (40.0pt too wide) in paragraph at lines 69--69
  []$[]$  
  []
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+[3]) (./Chapters/Chapter1.tex [4]
+Chapter 1.
+------------------------------------------------------------------------------
+ 1 Some Basic Simulations
+------------------------------------------------------------------------------
+[5
+
+] [6]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 83--83
+ []$[]$  
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
- [4] [5])
-(./Chapters/Chapter1.tex [6]
-Chapter 1.
-------------------------------------------------------------------------------
- 1 Chapter 1 TITLE GOES HERE!!
-------------------------------------------------------------------------------
-[7
-
-]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 78--78
- []$[]$  
- []
-
-[8] [9] [10] [11] [12] [13] [14]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+ [7] [8] [9]
+[10] [11] [12]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 220.
- [15] [16] [17]
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 225.
+ [13] [14] [15] [16]
 
-Package natbib Warning: Citation `Reference3' on page 18 undefined on input lin
-e 282.
-
-
-Package natbib Warning: Citation `Reference2' on page 18 undefined on input lin
-e 282.
+Package natbib Warning: Citation `Reference3' on page 17 undefined on input lin
+e 287.
 
 
-Package natbib Warning: Citation `Reference1' on page 18 undefined on input lin
-e 282.
+Package natbib Warning: Citation `Reference2' on page 17 undefined on input lin
+e 287.
 
 
-Package natbib Warning: Citation `Reference2' on page 18 undefined on input lin
-e 282.
+Package natbib Warning: Citation `Reference1' on page 17 undefined on input lin
+e 287.
 
 
-Package natbib Warning: Citation `Reference1' on page 18 undefined on input lin
-e 282.
+Package natbib Warning: Citation `Reference2' on page 17 undefined on input lin
+e 287.
 
 
-Package natbib Warning: Citation `Reference3' on page 18 undefined on input lin
-e 282.
+Package natbib Warning: Citation `Reference1' on page 17 undefined on input lin
+e 287.
 
-[18] [19] <Figures/Electron.pdf, id=423, 398.3386pt x 284.52756pt>
+
+Package natbib Warning: Citation `Reference3' on page 17 undefined on input lin
+e 287.
+
+[17] <Figures/Electron.pdf, id=385, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 
 <use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 304.
+Package pdftex.def Info: Figures/Electron.pdf used on input line 309.
 (pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [20 <./Figures/Electron.pdf>] [21] [22])
-(./Appendices/AppendixA.tex [23]
+ [18 <./Figures/Electron.pdf>] [19] [20])
+(./Appendices/AppendixA.tex [21]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-[24
+[22
 
-]) [25]
+]) [23]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -934,7 +934,7 @@ Appendix A.
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
-[26
+[24
 
 
 ]
@@ -943,17 +943,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F63DD32678A0754C3B62B8D3C586441A;6883.
+(rerunfilecheck)             Checksum: F77DA3EC40045A8F9B148650A5949CD8;5756.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 13889 strings out of 493315
- 192118 string characters out of 6137904
- 433062 words of memory out of 5000000
- 16995 multiletter control sequences out of 15000+600000
+ 13877 strings out of 493315
+ 191965 string characters out of 6137904
+ 410055 words of memory out of 5000000
+ 16990 multiletter control sequences out of 15000+600000
  20826 words of font info for 79 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,45p,1108b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,1108b,1853s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -974,10 +974,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (35 pages, 508737 bytes).
+Output written on main.pdf (33 pages, 503826 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 539 compressed objects within 6 object streams
- 138 named destinations out of 1000 (max. 500000)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
