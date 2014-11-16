@@ -9,7 +9,7 @@ var color = "red";
 var g = .1635; // acceleration due to gravity
 var x = 40;  // initial horizontal position
 var y = 40;  // initial vertical position
-var vx = parseInt(prompt('what is the initial horizontal speed of ball you would like?(recommended values of 1-20'));  // initial horizontal speed 
+var vx = parseFloat(prompt('what is the initial horizontal speed of ball you would like?(recommended values of 1-20'));  // initial horizontal speed 
 var vy = 0;  // initial vertical speed
  
 window.onload = init; 
@@ -23,9 +23,9 @@ function onEachStep() {
   x += vx; // horizontal speed increases horizontal position 
   y += vy; // vertical speed increases vertical position
 
-  if(y=== canvas.height - radius){
-    vx *= .999 // friction between floor and ball
-  }
+  // if(y > canvas.height -radius*1.01 && y < canvas.height - radius*.99){
+  //   vx *= .99; // friction between floor and ball
+  // }
   if (y > canvas.height - radius){ // if ball hits the ground
     y = canvas.height - radius; // reposition it at the ground
     vy *= -0.7; // then reverse and reduce its vertical speed
