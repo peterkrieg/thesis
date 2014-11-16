@@ -70,7 +70,7 @@ function drawBall() {
     arc(x, y, radius, 0, 2*Math.PI, true);
     closePath();
     fill();
-};
+  };
 };
 
 \end{lstlisting}
@@ -78,7 +78,7 @@ function drawBall() {
 
 This code functions by first setting up the canvas to be an appropriate size, on lines 1-5.  Then, the simple variables of radius, color, initial positions/velocities, and acceleration are initialized.  As mentioned in the introduction, the canvas HTML element defines positions in terms of pixels, with the top left corner of the canvas being the origin.  Therefore, the ball is initialized to appear at (40, 40) which is near the top left corner for any computer screen.  The value of g, the gravitational constant, is set to .1635 to accurately represent its value near Earth's surface, of $9.81 \hspace{1mm} \frac{m}{s^2}$.  To understand why this value makes sense, it is necessary to understand the units of velocity on the HTML canvas.  The position during the simulation is given in terms of pixels, which of course differs from the SI unit of meters.  However, as long as g can be initialized to be $9.81 \hspace{1mm} \frac{px}{s^2}$, the simulation will still look physically accurate.  This can be explained with the equation below:
 
-\begin{equation} \label{pixelsconversion}
+\begin{equation} \label{eq:pixelsconversion}
 9.81 \hspace{1mm}  \frac{px}{s^2}  = .1635 \hspace{1mm}  \frac{\frac{px}{s}}{frame} \hspace{1mm}  \times \hspace{1mm}  \hspace{1mm}  \frac{60 frame}{s}
 \end{equation}
 
@@ -87,13 +87,30 @@ The value of g is calculated based on the fact that the simulation was run at 60
 
 The remainder of the code involves 3 functions that call one another to create the flow of the simulation.  The first function, init (``initialize'') is called when the browser window is loaded(line 15).  This function simply delays the next function, onEachStep, by 16.66 ms, meaning that the function essentially runs 60 times per second, producing the desired 60 frames per second.  Line 18 accomplishes this in a crude method: simulations later will involve more sophisticated techniques.  The onEachStep function contains the instructions for each frame of the simulation.  It involves multiple conditional if-statement loops that create the illusion that the ball bounces off of the walls and floor.  
 
-All 3 conditional loops involve a coefficient of restitution, or $C_r$.  This is a mechanical property, resulting from how ``bouncy'' the ball is, and measures the ratio of the kinetic energy after and before the impact.  This is derived below:
+All 3 conditional loops involve a coefficient of restitution, or $C_r$.  This is a mechanical property, representing how ``bouncy'' the ball is, and measures the ratio of the kinetic energy after and before the impact.  This is derived below:
 
-\begin{equation}\label{cr}
+\begin{equation}\label{eq:cr}
 C_r = \sqrt{\frac{KE_f}{KE_i}} = \sqrt{\frac{\frac{1}{2} mv_f^2}{\frac{1}{2} mv_i^2}} = \frac{v_f}{v_i}
 \end{equation}
 
-A $C_r$ value of .8 was used for this simulation, which is comparable to that of a tennis ball. 
+A $C_r$ value of .8 was used for this simulation, which is comparable to that of a tennis ball\textsuperscript{\cite{tennisball}}.  The variable Cr represents this value in the code, and is simply multiplied by the velocity before impact, so the following equation results:
+
+\begin{equation}\label{eq:velocitycr}
+v_f = v_i * C_r
+\end{equation}
+
+An essential part of any physics simulation involves \textit{collision detection}.  For the simple bouncing ball simulation, this is accomplished by conditional loops for if the ball's position exceeds the canvas constraints.  
+
+
+The last function of the program, drawBall, simply contains commands for the canvas API to draw.  While these commands can be very complicated and intricate to create the exact visual aesthetic desired, the extent of these commands is not the purpose of this thesis.  Basically, this function works by ``erasing'' the canvas of any previous graphics, and then creating a new visual with the arc() method.   
+
+The logic of the program can be summarized through the flow chart below:
+
+
+
+
+
+
 
 
 

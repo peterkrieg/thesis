@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 NOV 2014 12:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 NOV 2014 12:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -875,41 +875,53 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
  []$[]$  
  []
 
-[6] [7]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 160--160
+[6] [7] [8]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 176--176
  []$[]$  
  []
 
-) (./Appendices/AppendixA.tex [8]
+) (./Appendices/AppendixA.tex [9]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-[9
+[10
 
-]) [10]
+]) [11]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [11
+(./main.bbl
+Underfull \hbox (badness 7667) in paragraph at lines 20--24
+[]\OT1/cmr/m/n/10.95 Roux, A., & Dick-er-son, J.(2007). ISB Jour-nal of Physics
+ \OT1/cmr/m/it/10.95 Co-ef-fi-cient
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 20--24
+\OT1/cmr/m/it/10.95 of Resti-tu-tion of a Ten-nis Ball. \OT1/cmr/m/n/10.95 Re-t
+rieved Novem-ber 10, 2014, from
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+ [12
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9FFE11B789C26B9BE4B8B567C775500;1793.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
+(rerunfilecheck)             Checksum: 36B855F0648082650F579DDCD2DEB3D9;1793.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 13816 strings out of 493315
- 191118 string characters out of 6137904
- 431989 words of memory out of 5000000
- 16924 multiletter control sequences out of 15000+600000
+ 13823 strings out of 493315
+ 191227 string characters out of 6137904
+ 411051 words of memory out of 5000000
+ 16928 multiletter control sequences out of 15000+600000
  16001 words of font info for 60 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,45p,1108b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -930,10 +942,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (19 pages, 427875 bytes).
+Output written on main.pdf (20 pages, 431411 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 147 named destinations out of 1000 (max. 500000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 150 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
