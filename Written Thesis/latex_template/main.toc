@@ -15,7 +15,8 @@
 \contentsline {subsection}{\numberline {0.2.1}The Code}{3}{subsection.13}
 \contentsline {chapter}{\numberline {1}Some Basic Simulations}{5}{chapter.26}
 \contentsline {section}{\numberline {1.1}Basic Ball Bouncing}{5}{section.27}
+\contentsline {section}{\numberline {1.2}More Advanced Ball Bouncing}{8}{section.84}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{9}{appendix.84}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{10}{appendix.85}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{11}{dummy.85}
+\contentsline {chapter}{Bibliography}{12}{dummy.86}
