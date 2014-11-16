@@ -7,20 +7,21 @@ canvas.width = screen.width -100;
 
 
 var g = 0.1;
-var radius = 20;
+var radius;
 var color = "#0000ff";
 var balls;
-var numBalls = 10;
+var numBalls = prompt('how many balls would you like to have bounce?'); 
  
 window.onload = init; 
  
 function init() {
 	balls = new Array();
 	for (var i=0; i<numBalls; i++){
+		radius=Math.random()*20+5;
 		var ball = new Ball(radius,color);	
 		ball.x = 50;
 		ball.y = 75;
-		ball.vx = Math.random()*5;
+		ball.vx = Math.random()*15;
 		ball.vy = (Math.random()-0.5)*10;
 		ball.draw(context);
 		balls.push(ball);
