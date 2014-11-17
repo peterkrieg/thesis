@@ -11,7 +11,7 @@ var x = 40;  // initial horizontal position
 var y = 40;  // initial vertical position
 var vx = parseFloat(prompt('what is the initial horizontal speed of ball you would like?(recommended values of 1-20'));  // initial horizontal speed 
 var vy = 0;  // initial vertical speed
-var Cx = .8;
+var C_r = .8;
  
 window.onload = init; 
  
@@ -29,15 +29,15 @@ function onEachStep() {
   // }
   if (y > canvas.height - radius){ // if ball hits the ground
     y = canvas.height - radius; // reposition it at the ground
-    vy *= -Cx; // then reverse and reduce its vertical speed
+    vy *= -C_r; // then reverse and reduce its vertical speed
   }
   if (x > canvas.width - radius){ // if ball hits right wall
     x = canvas.width - radius; // reposition it right at wall 
-    vx *= -Cx;  // then reduce and reverse horizontal speed
+    vx *= -C_r;  // then reduce and reverse horizontal speed
   }
   if (x < radius){  // if ball hits left wall
     x = radius;  // reposition it right at wall
-    vx *= -Cx  // then reverse and reduce horizontal speed
+    vx *= -C_r  // then reverse and reduce horizontal speed
   }
   drawBall(); // draw the ball
 };
