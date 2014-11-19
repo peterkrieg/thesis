@@ -8,7 +8,7 @@ canvas.width = screen.width -100;
 
 var g = 0.1;
 var radius;
-var color = "#0000ff";
+var color = 'red';
 var balls;
 var numBalls = prompt('how many balls would you like to have bounce?'); 
  
@@ -23,6 +23,7 @@ function init() {
 		ball.y = 75;
 		ball.vx = Math.random()*15;
 		ball.vy = (Math.random()-0.5)*10;
+		ball.color = getRandomColor();
 		ball.draw(context);
 		balls.push(ball);
 	}  
@@ -54,4 +55,13 @@ function onEachStep() {
 		ball.draw(context); 
 	} 
 };
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
  
