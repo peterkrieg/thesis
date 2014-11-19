@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 NOV 2014 00:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 NOV 2014 02:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -811,7 +811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 ------------------------------------------------------------------------------
 [3
 
-] [4]
+]
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
@@ -819,14 +819,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5
+ [4
 
 
 ]
 ------------------------------------------------------------------------------
  Abbreviations
 ------------------------------------------------------------------------------
-[6
+[5
 
 
 
@@ -834,14 +834,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[7
+[6
 
 ] (./Chapters/Introduction.tex [1
 
 
 
 ]
-<Figures/frames.png, id=129, 701.62125pt x 157.58875pt>
+<Figures/frames.png, id=125, 701.62125pt x 157.58875pt>
 File: Figures/frames.png Graphic file (type png)
 
 <use Figures/frames.png>
@@ -875,7 +875,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
  []$[]$  
  []
 
-[6] [7] <Figures/basicbouncingball.png, id=234, 786.94pt x 461.725pt>
+[6] [7] <Figures/basicbouncingball.png, id=230, 786.94pt x 461.725pt>
 File: Figures/basicbouncingball.png Graphic file (type png)
 
 <use Figures/basicbouncingball.png>
@@ -886,7 +886,7 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
-) (./Appendices/AppendixA.tex [8 <./Figures/basicbouncingball.png>] [9]
+[8 <./Figures/basicbouncingball.png>]) (./Appendices/AppendixA.tex [9]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
@@ -910,22 +910,22 @@ rieved Novem-ber 10, 2014, from
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
  [12
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 21FA4D03FFE0E5A9B261B0CAAF2474D6;2013.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 13785 strings out of 493315
- 190850 string characters out of 6137904
+ 13784 strings out of 493315
+ 190843 string characters out of 6137904
  411011 words of memory out of 5000000
  16931 multiletter control sequences out of 15000+600000
  16001 words of font info for 60 fonts, out of 8000000 for 9000
@@ -948,10 +948,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (20 pages, 455715 bytes).
+Output written on main.pdf (19 pages, 455643 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 108 named destinations out of 1000 (max. 500000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 107 named destinations out of 1000 (max. 500000)
  120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
