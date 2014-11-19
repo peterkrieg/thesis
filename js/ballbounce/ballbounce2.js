@@ -14,7 +14,7 @@ var r = 20;
 var C_r = .75;  // Coefficient of restitution (tennis ball would be .8)
 var rho = 1.2;    // density of air would be 1.2
 var dt = 0.015;  // Time Step
-var C_d = 0.47 //Coefficient of drag for ball
+var C_d = 0.47; //Coefficient of drag for ball
 var A = Math.PI * r * r / 10000;
 var color = 'red';
 
