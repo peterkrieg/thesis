@@ -149,13 +149,51 @@ Using these basic mechanics equations, the previous ball bouncing example can be
 
 \setstretch{1}
 \begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=More advanced ball bouncing simulation, label=lst:ballbounce2]
+var x = 40;
+var y =40;
+var vy = 0;
+var ay = 0;
+var m = 1;
+var r = 20;
+var rSI = r* 0.000230909;  // radius in SI, converting px to m
+var C_r = .8;  // Coefficient of restitution (tennis ball would be .8)
+var rho = 1.2;    // density of air would be 1.2, water would be 1000
+var dt = 60/1000;  // Time Step
+var C_d = 0.47; //Coefficient of drag for sphere
+var A = Math.PI * rSI * rSI;
+var color = 'red';
 
+window.onload = init();
+  
+function init(){
+  setInterval(onEachStep, 1000/60);
+}
 
+function onEachStep(){ 
+  var fy = 0;
+  fy += m * 9.81;   // weight force
+  if (vy>=0){
+    fy -= 1* 0.5 *rho * C_d *A *vy *vy; 
+  } 
+  else {
+    fy += 1*0.5 *rho *C_d *A *vy *vy;
+  }
 
-asdgasd
-
-
+  ay = fy / m;
+  vy += ay * dt;
+  y += vy;
+  
+  // simple collision detection for floor only
+  if (y + r > canvas.height){ 
+    vy *= -C_r; 
+    y = canvas.height - r;  
+  }
+  drawBall();
+}
 \end{lstlisting}
+\setstretch{2}
+
+To eliminate redundancy, the code doesn't show previous functions used, such as drawBall().  The code also doesn't show the basic steps to initialize any simulation with the canvas and context commands.  The code is very similar to the simulation in the previous section, except it incorporates air resistance.  Essentially, this simulation uses more kinematic equations, by calculating the net force, acceleration, and velocity for each frame.  
 
 
 
