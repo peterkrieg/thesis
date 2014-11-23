@@ -1,24 +1,20 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
-var ctx = canvas.getContext('2d');
 
 canvas.height=screen.height-300;
 canvas.width=screen.width-100;
 
-var i =0;
 var x = 40;
 var y =40;
 var vy = 0;
 var ay = 0;
 var m = .001;
 var r = 20;
-// var rSI = 2;
-var rSI = r* 0.0002309090909;  // radius SI, conversion between pixels to meters
-                               // optimized for macbook pro (110 dpi)
+var rSI = r* 0.0002309090909;  // radius in SI, converting px to m
 var C_r = .8;  // Coefficient of restitution (tennis ball would be .8)
 var rho = 1.2;    // density of air would be 1.2, water would be 1000
 var dt = 60/1000;  // Time Step
-var C_d = 0.47; //Coefficient of drag for ball
+var C_d = 0.47; //Coefficient of drag for sphere
 var A = Math.PI * rSI * rSI;
 var color = 'red';
 
@@ -42,17 +38,12 @@ function onEachStep(){
   } 
   else {
     fy += 1*0.5 *rho *C_d *A *vy *vy;
-
   }
 
   ay = fy / m;
-  vy += ay * dt *lookreal;
+  vy += ay * dt;
   y += vy;
-  if(i%30===0){
-    console.log(i/30 +'  sec up!!');
-    console.log(vy);
-    console.log(ay);
-  }
+  
 
   
   if (y + r > canvas.height){ // simple collision detection for floor only
@@ -62,7 +53,6 @@ function onEachStep(){
     // console.log('ay is ' +ay);
   }
   drawBall();
-  i++;
 }
 
 function drawBall() {

@@ -21,7 +21,7 @@ A ball bouncing will show the basic kinematic equations, and how they are used i
 
 
 \setstretch{1}
-\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=A basic ball bouncing simulation, label=lst:basicballbounce]
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=A basic ball bouncing simulation, label=lst:ballbounce1]
 var canvas = document.getElementById(`canvas');
 var context = canvas.getContext(`2d'); 
 
@@ -122,7 +122,44 @@ The logic of the program can be summarized through the flow chart below:
 
 While the previous example realistically incorporated the basic kinematic equations into account, it still fails to recognize important fundamentals of physics.  The simulation in this chapter will still be a simple ball bouncing, but will take into account air resistance.
 
-Drag is generally defined as the force on an object that resists its motion through a fluid.  In the case of air resistance, the fluid is a gas, and therefore the process is called aerodynamic drag.  Most of the drag force results as a response to the inertia of the fluid: the resistance it exerts to oppose being pushed aside.  
+\subsection{Background Physics}
+
+Drag is generally defined as the force on an object that resists its motion through a fluid.  In the case of air resistance, the fluid is a gas, and therefore the process is called aerodynamic drag.  Most of the drag force results as a response to the inertia of the fluid: the resistance it exerts to oppose being pushed aside.  This can be expressed in the equation below:
+
+\begin{equation} \label{eq:drag}
+f_{drag} = -\frac{1}{2}C_d \rho A v^2
+\end{equation}
+
+The equation involves a negative sign because the force of drag is always opposite the direction of motion.  $C_d$ is referred to as the drag coefficient, and is a dimensionless quantity that is used to model complex dependencies of shape, inclination, and flow conditions.  While $C_d$ is in general not an absolute constant for a given body shape, for the purpose of these simulations constant values were used.  These values are typically determined experimentally: for example, the $C_d$ of a sphere is approximately .47.  In equation \ref{eq:drag}, $\rho$ is the mass density of the fluid, in $\frac{kg}{m^3}$.  Most of the simulations in this thesis occur in air, which has a density of 1.225 $\frac{kg}{m^3}$  (at sea level and 15 \textdegree C).  Running the simulations in different fluids can be simulated by changing $\rho$ to higher values (water, for example, would have $\rho$ equal to 1000 $\frac{kg}{m^3}$).  Lastly, $A$ in equation \ref{eq:drag} is the cross-sectional area of the object.  A sphere, for example, would have a cross-sectional area of $\pi r^2 $ 
+
+The basic kinematic equations can also be used to make the simulations more physically realistic.  
+
+\begin{equation}\label{eq:position}
+d = v_i t+ \frac{1}{2}at^2
+\end{equation}
+\begin{equation}\label{eq:v}
+v_f = v_i + at
+\end{equation}
+
+These equations are fundamental to any physical situation and can be used to make the ball bouncing example of the previous section more realistic
+
+\subsection{The Code}
+
+Using these basic mechanics equations, the previous ball bouncing example can be made more physically accurate.  The code below shows a second simulation which incorporates air resistance:
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=More advanced ball bouncing simulation, label=lst:ballbounce2]
+
+
+
+asdgasd
+
+
+\end{lstlisting}
+
+
+
+
 
 
 
