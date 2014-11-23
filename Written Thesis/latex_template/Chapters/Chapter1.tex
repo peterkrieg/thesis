@@ -193,7 +193,25 @@ function onEachStep(){
 \end{lstlisting}
 \setstretch{2}
 
-To eliminate redundancy, the code doesn't show previous functions used, such as drawBall().  The code also doesn't show the basic steps to initialize any simulation with the canvas and context commands.  The code is very similar to the simulation in the previous section, except it incorporates air resistance.  Essentially, this simulation uses more kinematic equations, by calculating the net force, acceleration, and velocity for each frame.  
+To eliminate redundancy, the code doesn't show previous functions used, such as drawBall().  The code also doesn't show the basic steps to initialize any simulation with the canvas and context commands.  The code is very similar to the simulation in the previous section, except it incorporates air resistance.  Essentially, this simulation uses more kinematic equations, by calculating the net force, acceleration, and velocity for each frame.  First, the net vertical force is caculated, by combining the force of gravity $F_g = mg$ with the air drag from equation \ref{eq:drag}.  This step involves a conditional loop for the cases of positive and negative velocity.  Once the net force is calculated, the acceleration in the y-direction is found by using Newton's 2nd law of $F = ma$.  From there, the velocity and vertical position of the ball are updated.  Unlike the previous simulation, this example involves a variable dt, which is set to $\sim$16 ms for the same 60 frames per second.   
+
+
+This code involves interesting conversions between pixels and meters.  Becuase the on screen simulation is presented eventually in terms of pixels, the physics equations must acknowledge this.  The variable rSI on line 7 converts the radius of ball from pixels into meters.  This is accomplished knowing the pixel density of the screen.  This is commonly approximately 100 (dots per inch).  The simulations were optimized for a macbook pro 15 inch model, which features 110 dpi.  The calculation is shown below:
+
+\begin{equation}\label{eq:pixels}
+\frac{1m}{100 cm} \hspace{1mm} \frac{2.54 cm}{1 in}  \hspace{1mm}   \frac{1 in}{110 px} \approx  0.00023091 \frac{m}{px}
+\end{equation}
+
+Once the conversion is made, the physics equations use the radius of the ball in terms of meters instead of pixels, which would give erroneous answers.
+
+\section{Multiple Balls Bouncing}
+
+So far, this chapter has dealt with a single object in motion.  However, physics rarely involves just one body in motion.  To demonstrate how more than one object can be displayed simultaneously, this section will show the case of multiple bouncing balls.  There is no new physics introduced in this section, but the coding concepts will be used repeatedly in later chapters of this thesis.
+
+\subsection{The Code}
+
+
+
 
 
 

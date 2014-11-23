@@ -18,7 +18,9 @@
 \contentsline {section}{\numberline {1.2}More Advanced Ball Bouncing}{8}{section.84}
 \contentsline {subsection}{\numberline {1.2.1}Background Physics}{9}{subsection.85}
 \contentsline {subsection}{\numberline {1.2.2}The Code}{10}{subsection.89}
+\contentsline {section}{\numberline {1.3}Multiple Balls Bouncing}{11}{section.133}
+\contentsline {subsection}{\numberline {1.3.1}The Code}{12}{subsection.134}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{12}{appendix.132}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.135}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{14}{dummy.133}
+\contentsline {chapter}{Bibliography}{15}{dummy.136}

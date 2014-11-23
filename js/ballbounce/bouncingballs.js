@@ -1,16 +1,15 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d'); 
 
-
 canvas.height = screen.height-200;
 canvas.width = screen.width -100;
-
 
 var g = 0.1;
 var radius;
 var color = 'red';
 var balls;
 var numBalls = prompt('how many balls would you like to have bounce?'); 
+var C_d = .8;
  
 window.onload = init; 
  
@@ -49,8 +48,9 @@ function onEachStep() {
 			ball.y = canvas.height - radius; 
 			ball.vy *= -0.8; 
 		}
-		if (ball.x > canvas.width + radius){ 
-			ball.x = -radius; 
+		if (ball.x + radius > canvas.width){ 
+			ball.x = canvas.width - radius; 
+			ball.vx 
 		}
 		ball.draw(context); 
 	} 
