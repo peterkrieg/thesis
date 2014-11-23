@@ -28,17 +28,13 @@ context.moveTo(20, 100);
 context.lineTo(250, 400); 
 context.stroke();
 
-context.beginPath();
 context.moveTo(250, 400);
 context.lineTo(500, 500);
 context.stroke();
 
-context.strokeStyle= '#ff0000';
-context.fillStyle = 'red';
 context.fillRect(20, 40, 1370, 50);
 
 
-context.fillStyle=''
 context.moveTo(300, 300);
 context.lineTo(300, 600);
 context.stroke();
@@ -81,6 +77,7 @@ function onEachStep(){
 }
 
 init();
+
 
 
 
