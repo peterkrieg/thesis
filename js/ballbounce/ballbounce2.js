@@ -8,7 +8,7 @@ var x = 40;
 var y =40;
 var vy = 0;
 var ay = 0;
-var m = .001;
+var m = 1;
 var r = 20;
 var rSI = r* 0.0002309090909;  // radius in SI, converting px to m
 var C_r = .8;  // Coefficient of restitution (tennis ball would be .8)
@@ -17,9 +17,7 @@ var dt = 60/1000;  // Time Step
 var C_d = 0.47; //Coefficient of drag for sphere
 var A = Math.PI * rSI * rSI;
 var color = 'red';
-
 var lookreal = 1/3.105;  // this makes the simulation look more realistic, looks too fast before
-
 
 window.onload = init();
   
@@ -28,10 +26,8 @@ function init(){
   setInterval(onEachStep, 1000/60);
 }
 
-
 function onEachStep(){ 
   var fy = 0;
-
   fy += m * 9.81;   // weight force
   if (vy>=0){
     fy -= 1* 0.5 *rho * C_d *A *vy *vy; 
@@ -44,13 +40,10 @@ function onEachStep(){
   vy += ay * dt;
   y += vy;
   
-
-  
-  if (y + r > canvas.height){ // simple collision detection for floor only
+  // simple collision detection for floor only
+  if (y + r > canvas.height){ 
     vy *= -C_r; 
     y = canvas.height - r;  
-    // console.log('fy is ' +fy);
-    // console.log('ay is ' +ay);
   }
   drawBall();
 }
@@ -65,5 +58,3 @@ function drawBall() {
     fill();
   };
 };
-   
-
