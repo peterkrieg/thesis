@@ -210,6 +210,76 @@ So far, this chapter has dealt with a single object in motion.  However, physics
 
 \subsection{The Code}
 
+To generate more than one object, arrays can be used.  The code below relies on arrays and object prototypes to create the effect:
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Multiple balls bouncing simulation, label=lst:ballsbouncing]
+var g = 0.1635;
+var balls;
+var numBalls = prompt('how many balls would you like to have bounce?'); 
+var C_d = .8;
+ 
+window.onload = init; 
+ 
+function init() {
+  balls = []; // creates empty array
+  for (var i=0; i<numBalls; i++){
+    radius = Math.random()*20+5;
+    var ball = new Ball();  
+    ball.x = 50;
+    ball.y = 75;
+    ball.radius =  radius;
+    ball.vx = Math.random()*15;
+    ball.vy = (Math.random()-0.5)*10;
+    ball.color = getRandomColor();
+    ball.draw(context);
+    balls.push(ball);
+  }  
+  setInterval(onEachStep, 1000/60); // 60 fps
+};
+ 
+function onEachStep() {
+  context.clearRect(0, 0, canvas.width, canvas.height); 
+  for (var i=0; i<numBalls; i++){
+    var ball = balls[i];
+    ball.vy += g;     
+
+    if (ball.vx >0){ // while vx is positive, decrease to show friction/air drag
+    ball.vx -= .001;
+  } else{
+    ball.vx === 0;// make sure ball stops moving appropriately
+  }
+    ball.x += ball.vx; 
+    ball.y += ball.vy; 
+      
+    if (ball.y > canvas.height - ball.radius){ 
+      ball.y = canvas.height - ball.radius; 
+      ball.vy *= -C_d; 
+    }
+    if (ball.x + ball.radius > canvas.width){
+      ball.x = canvas.width - ball.radius; 
+      ball.vx *= -C_d;
+    }
+    if (ball.x < ball.radius){
+      ball.x = ball.radius;
+      ball.vx *= -C_d;
+    }
+    ball.draw(context); 
+  } 
+};
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+\end{lstlisting}
+
+
+
 
 
 

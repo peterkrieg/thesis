@@ -4,9 +4,7 @@ var context = canvas.getContext('2d');
 canvas.height = screen.height-200;
 canvas.width = screen.width -100;
 
-var g = 0.1;
-var radius;
-var color = 'red';
+var g = 0.1635;
 var balls;
 var numBalls = prompt('how many balls would you like to have bounce?'); 
 var C_d = .8;
@@ -14,12 +12,13 @@ var C_d = .8;
 window.onload = init; 
  
 function init() {
-	balls = new Array();
+	balls = []; // creates empty array
 	for (var i=0; i<numBalls; i++){
-		radius=Math.random()*20+5;
-		var ball = new Ball(radius,color);	
+		radius = Math.random()*20+5;
+		var ball = new Ball();	
 		ball.x = 50;
 		ball.y = 75;
+		ball.radius =  radius;
 		ball.vx = Math.random()*15;
 		ball.vy = (Math.random()-0.5)*10;
 		ball.color = getRandomColor();
@@ -40,17 +39,20 @@ function onEachStep() {
   } else{
     ball.vx === 0;   // the instant vx is 0 or negative, it is set to 0 to stop the movement in x direction
   }
-			
 		ball.x += ball.vx; 
 		ball.y += ball.vy; 
 			
-		if (ball.y > canvas.height - radius){ 
-			ball.y = canvas.height - radius; 
-			ball.vy *= -0.8; 
+		if (ball.y > canvas.height - ball.radius){ 
+			ball.y = canvas.height - ball.radius; 
+			ball.vy *= -C_d; 
 		}
-		if (ball.x + radius > canvas.width){ 
-			ball.x = canvas.width - radius; 
-			ball.vx 
+		if (ball.x + ball.radius > canvas.width){
+			ball.x = canvas.width - ball.radius; 
+			ball.vx *= -C_d;
+		}
+		if (ball.x < ball.radius){
+			ball.x = ball.radius;
+			ball.vx *= -C_d;
 		}
 		ball.draw(context); 
 	} 
@@ -64,4 +66,3 @@ function getRandomColor() {
     }
     return color;
 }
- 
