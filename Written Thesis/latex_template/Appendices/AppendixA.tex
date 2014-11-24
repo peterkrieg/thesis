@@ -1,56 +1,225 @@
 % Appendix A
 
-\chapter{Appendix Title Here} % Main appendix title
+\chapter{Full Code Listings From Ch. 1} % Main appendix title
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\lhead{Appendix A. \emph{Appendix Title Here}} % This is for the header on each page - perhaps a shortened title
+\lhead{Appendix A. \emph{Full Code Listings From Chapter 1 }} % This is for the header on each page - perhaps a shortened title
 
-THE  APPENDIXGOESHERE
+\section{Simulation \#1:  Simple Ball Bouncing}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=A basic ball bouncing simulation, label=lst:ballbounce1]
+var canvas = document.getElementById(`canvas');
+var context = canvas.getContext(`2d'); 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+canvas.height = screen.height-200;
+canvas.width = screen.width -100;
+
+var radius = 20;
+var color = ``red";
+var g = .1635; // acceleration due to gravity
+var x = 40;  // initial horizontal position
+var y = 40;  // initial vertical position
+var vx = parseFloat(prompt(`what is the initial horizontal speed of ball you would like?(recommended values of 1-20'));  // initial horizontal speed 
+var vy = 0;  // initial vertical speed
+ 
+window.onload = init; 
+ 
+function init() {
+  setInterval(onEachStep, 1000/60); // 60 fps
+};
+ 
+function onEachStep() {
+  vy += g; // gravity increases the vertical speed
+  x += vx; // horizontal speed increases horizontal position 
+  y += vy; // vertical speed increases vertical position
+
+  if (y > canvas.height - radius){ // if ball hits the ground
+    y = canvas.height - radius; // reposition it at the ground
+    vy *= -0.8; // then reverse and reduce its vertical speed
+  }
+  if (x > canvas.width - radius){ // if ball hits right wall
+    x = canvas.width - radius; // reposition it right at wall 
+    vx *= -0.8;  // then reduce and reverse horizontal speed
+  }
+  if (x < radius){  // if ball hits left wall
+    x = radius;  // reposition it right at wall
+    vx *= -0.8  // then reverse and reduce horizontal speed
+  }
+  drawBall(); // draw the ball
+};
+ 
+function drawBall() {
+  with (context){
+    clearRect(0, 0, canvas.width, canvas.height); 
+    fillStyle = color;
+    beginPath();
+    arc(x, y, radius, 0, 2*Math.PI, true);
+    closePath();
+    fill();
+  };
+};
+\end{lstlisting}
+
+\section{Simulation \#2: More Advanced Ball Bouncing}
+
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=More Advanced Ball Bouncing Simulation label=lst:ballbounce2]
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+canvas.height=screen.height-300;
+canvas.width=screen.width-100;
+
+var x = 40;
+var y =40;
+var vy = 0;
+var ay = 0;
+var m = 1;
+var r = 20;
+var rSI = r* 0.0002309090909;  // radius in SI, converting px to m
+var C_r = .8;  // Coefficient of restitution (tennis ball would be .8)
+var rho = 1.2;    // density of air would be 1.2, water would be 1000
+var dt = 60/1000;  // Time Step
+var C_d = 0.47; //Coefficient of drag for sphere
+var A = Math.PI * rSI * rSI;
+var color = 'red';
+
+window.onload = init();
+  
+function init(){
+  console.log(vy);
+  setInterval(onEachStep, 1000/60);
+}
+
+function onEachStep(){ 
+  var fy = 0;
+  fy += m * 9.81;   // weight force
+  if (vy>=0){
+    fy -= 1* 0.5 *rho * C_d *A *vy *vy; 
+  } 
+  else {
+    fy += 1*0.5 *rho *C_d *A *vy *vy;
+  }
+
+  ay = fy / m;
+  vy += ay * dt;
+  y += vy;
+  
+  // simple collision detection for floor only
+  if (y + r > canvas.height){ 
+    vy *= -C_r; 
+    y = canvas.height - r;  
+  }
+  drawBall();
+}
+
+function drawBall() {
+  with (context){
+    clearRect(0, 0, canvas.width, canvas.height); 
+    fillStyle = color;
+    beginPath();
+    arc(x, y, r, 0, 2*Math.PI, true);
+    closePath();
+    fill();
+  };
+};
+\end{lstlisting}
+
+\section{Simulation \#3: Multiple Balls Bouncing}
+
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Multiple Balls Bouncing Simulation label=lst:ballsbouncing]
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d'); 
 
+canvas.height = screen.height-200;
+canvas.width = screen.width -100;
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+var g = 0.1635;
+var balls;
+var numBalls = prompt('how many balls would you like to have bounce?'); 
+var C_d = .8;
+ 
+window.onload = init; 
+ 
+function init() {
+	balls = []; // creates empty array
+	for (var i=0; i<numBalls; i++){
+		radius = Math.random()*20+5;
+		var ball = new Ball();	
+		ball.x = 50;
+		ball.y = 75;
+		ball.radius =  radius;
+		ball.vx = Math.random()*15;
+		ball.vy = (Math.random()-0.5)*10;
+		ball.color = getRandomColor();
+		ball.draw(context);
+		balls.push(ball);
+	}  
+	setInterval(onEachStep, 1000/60); // 60 fps
+};
+ 
+function onEachStep() {
+	context.clearRect(0, 0, canvas.width, canvas.height); 
+	for (var i=0; i<numBalls; i++){
+		var ball = balls[i];
+		ball.vy += g;     
 
+		if (ball.vx >0){   // while vx is still positive, decrease it incrementally to represent air resistance/friction
+    ball.vx -= .001;
+  } else{
+    ball.vx === 0;   // the instant vx is 0 or negative, it is set to 0 to stop the movement in x direction
+  }
+		ball.x += ball.vx; 
+		ball.y += ball.vy; 
+			
+		if (ball.y > canvas.height - ball.radius){ 
+			ball.y = canvas.height - ball.radius; 
+			ball.vy *= -C_d; 
+		}
+		if (ball.x + ball.radius > canvas.width){
+			ball.x = canvas.width - ball.radius; 
+			ball.vx *= -C_d;
+		}
+		if (ball.x < ball.radius){
+			ball.x = ball.radius;
+			ball.vx *= -C_d;
+		}
+		ball.draw(context); 
+	} 
+};
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
+\end{lstlisting}
 
+\vspace{2cm}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Ball.js file used for prototype ball object label=lst:ballprototype]
+function Ball (radius, color) {
+  this.radius = radius;
+  this.color = color;
+  this.x = 0;
+  this.y = 0;
+  this.vx = 0;
+  this.vy = 0;
+}
+
+Ball.prototype.draw = function (context) {
+	context.fillStyle = this.color;
+  context.beginPath();
+  context.arc(this.x, this.y, this.radius, 0, 2*Math.PI, true);
+  context.closePath();
+  context.fill();  
+};
+\end{lstlisting}
+

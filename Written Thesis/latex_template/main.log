@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 NOV 2014 21:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 NOV 2014 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -859,7 +859,11 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 47.
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `lst:ballbounce1' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -880,8 +884,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 51.
@@ -939,7 +942,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=75, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=87, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -1002,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 
 
 ]
-<Figures/frames.png, id=145, 701.62125pt x 157.58875pt>
+<Figures/frames.png, id=161, 701.62125pt x 157.58875pt>
 File: Figures/frames.png Graphic file (type png)
 
 <use Figures/frames.png>
@@ -1036,7 +1039,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
  []$[]$  
  []
 
-[6] [7] <Figures/basicbouncingball.png, id=250, 786.94pt x 461.725pt>
+[6] [7] <Figures/basicbouncingball.png, id=265, 786.94pt x 461.725pt>
 File: Figures/basicbouncingball.png Graphic file (type png)
 
 <use Figures/basicbouncingball.png>
@@ -1057,7 +1060,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 279--279
  []$[]$  
  []
 
-[13] <Figures/ballsbouncing.png, id=396, 1104.125pt x 562.1pt>
+[13] <Figures/ballsbouncing.png, id=411, 1104.125pt x 562.1pt>
 File: Figures/ballsbouncing.png Graphic file (type png)
 
 <use Figures/ballsbouncing.png>
@@ -1071,11 +1074,31 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 291--292
 ) (./Appendices/AppendixA.tex [14 <./Figures/ballsbouncing.png>]
 Appendix A.
 ------------------------------------------------------------------------------
- A Appendix Title Here
+ A Full Code Listings From Ch. 1
 ------------------------------------------------------------------------------
 [15
 
-]) [16]
+]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 63--63
+ []$[]$  
+ []
+
+[16]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 127--127
+ []$[]$  
+ []
+
+[17]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 203--203
+ []$[]$  
+ []
+
+
+Overfull \hbox (40.0pt too wide) in paragraph at lines 224--224
+ []$[]$  
+ []
+
+) [18]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1093,7 +1116,7 @@ rieved Novem-ber 10, 2014, from
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [17
+ [19
 
 
 ]
@@ -1102,14 +1125,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5873DAAD40DFD1852189840AF4B7BC3F;2669.
+(rerunfilecheck)             Checksum: 2DE0845E3DA52F6A7EE450540454A418;3594.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 14356 strings out of 493315
- 199198 string characters out of 6137904
- 484752 words of memory out of 5000000
- 17371 multiletter control sequences out of 15000+600000
+ 14563 strings out of 493315
+ 201875 string characters out of 6137904
+ 497822 words of memory out of 5000000
+ 17374 multiletter control sequences out of 15000+600000
  16342 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1132,10 +1159,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (24 pages, 543399 bytes).
+Output written on main.pdf (26 pages, 560301 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 226 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 729 compressed objects within 8 object streams
+ 430 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
