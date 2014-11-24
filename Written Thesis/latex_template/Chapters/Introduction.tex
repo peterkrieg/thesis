@@ -32,7 +32,17 @@ The physics simulations in this thesis differ greatly from common animations.  M
 \end{figure}
 
 
-The canvas API gets the initial state of the simulation, which could the position of a ball, for example.  Then, the frame is \textit{rendered} by applying rules to the canvas element, and changing the initial state of the simulation.  Once the rules have been applied, and all conditions are satisfied, the frame is rendered, and then displayed on the canvas element, to be seen in the web browser.  
+The canvas API gets the initial state of the simulation, which could the position of a ball, for example.  Then, the frame is \textit{rendered} by applying rules to the canvas element, and changing the initial state of the simulation.  Once the rules have been applied, and all conditions are satisfied, the frame is rendered, and then displayed on the canvas element, to be seen in the web browser.  The canvas is embedded into a web page with the <canvas> tag, like any other HTML tag.  The positioning of objects in the canvas element is specified with a coordinate system, which uses pixels as its unit.  Figure \ref{fig:canvas} shows the orientation of the canvas, which differs from the traditional cartesian coordinate system.
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=8cm]{Figures/canvas.png}
+
+	\caption{The canvas coordinate system.  The canvas is displayed on the screen as an invisible white rectangle by default.  A sample point of (20,30) is shown for clarification.}
+	\label{fig:canvas}
+\end{figure}
+
+
 
 To produce any realistic simulation, the steps in figure \ref{fig:frames} must be repeated multiple times per second.  In fact, these steps must be repeated 60 times per second to achieve the desired 60 frames per second outlined in the previous section.  Luckily, the canvas API is capable of running the instructions very quickly to make this simulation possible.  
 
@@ -71,9 +81,9 @@ To program the simulations in this thesis, I chose to write the code in javascri
 
 The above code displays the most basic HTML combined with javascript necessary to begin any simulation.  Lines 7-8 are the only ones that actually contain javascript: this is the simple step necessary for the canvas API to recognize the HTML document.  These two steps are necessary for any physics simulation.  The step on line 7 initializes a JS variable and sets it equal to the canvas element on the web document object.  The second step 
 
-All web browsers include some form of javascript interpreter: whenever the browser encounters a \textless script \textgreater element, it     ``passes''  the code onto the JS interpreter.  In listing \ref{lst:basichtml}, the HTML and JS code are written in the same document for clarity.  While this is an acceptable practice, all future simulations will involve the HTML referencing to external JS documents to keep the contents separate.  
+All web browsers include some form of javascript interpreter: whenever the browser encounters a \textless script \textgreater element, it     ``passes''  the code onto the JS interpreter.  In listing \ref{lst:basichtml}, the HTML and JS code are written in the same document for clarity.  While this is an acceptable practice, all future simulations will involve the HTML referencing to external JS documents to keep the contents separate.  The appendices in this thesis have full code files from all the simulations.  
 
-While this thesis can contain code excerpts, figures, and screen-shots of various simulations, it obviously can't contain the flow of images itself.  Therefore, I have put the entire thesis and its simulations on my personal website, which can be found at:  http://www.peterkrieg.com/thesis.  You can navigate by each chapter and view the simulations outlined in thesis.
+While this thesis can contain code excerpts, figures, and screen-shots of various simulations, it obviously can't contain the flow of images itself.  Therefore, I have put the entire thesis and its simulations on my personal website, which can be found at:  http://www.peterkrieg.com/thesis.  You can navigate by each chapter and view the simulations outlined in thesis. 
 
 
 
