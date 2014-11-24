@@ -10,9 +10,8 @@
 \vspace {2em}
 \hspace {-2em}
 \textbf {Introduction}
-\contentsline {section}{\numberline {0.1}What is a Physics Simulation?}{1}{section.10}
-\contentsline {section}{\numberline {0.2}Methods of Producing a Simulation}{2}{section.11}
-\contentsline {subsection}{\numberline {0.2.1}The Code}{3}{subsection.14}
+\contentsline {chapter}{\numberline {1}Simulating Orbits}{1}{chapter.9}
+\contentsline {section}{\numberline {1.1}Background Physics}{1}{section.10}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{5}{dummy.27}
+\contentsline {chapter}{Bibliography}{2}{dummy.11}

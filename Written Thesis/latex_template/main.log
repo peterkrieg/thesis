@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 00:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,7 +939,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=43, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=7, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -976,11 +976,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./main.toc)
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4
+[4
 
 
 ]
@@ -997,46 +999,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 ------------------------------------------------------------------------------
 [6
 
-] (./Chapters/Introduction.tex [1
+] (./Chapters/Chapter2.tex
+Chapter 1.
+------------------------------------------------------------------------------
+ 1 Simulating Orbits
+------------------------------------------------------------------------------
+) [1
 
 
 
 ]
-<Figures/frames.png, id=105, 701.62125pt x 157.58875pt>
-File: Figures/frames.png Graphic file (type png)
-
-<use Figures/frames.png>
-Package pdftex.def Info: Figures/frames.png used on input line 28.
-(pdftex.def)             Requested size: 426.79134pt x 95.86208pt.
-
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 28--29
- [][] 
- []
-
-<Figures/canvas.png, id=107, 670.75594pt x 340.27126pt>
-File: Figures/canvas.png Graphic file (type png)
-
-<use Figures/canvas.png>
-Package pdftex.def Info: Figures/canvas.png used on input line 39.
-(pdftex.def)             Requested size: 227.62204pt x 115.46742pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./Figures/frames.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 61.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 61.
- [3 <./Figures/canvas.png>]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 79--79
- []$[]$  
- []
-
-) [4]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1053,8 +1025,12 @@ rieved Novem-ber 10, 2014, from
  []
 
 )
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 43.
+See the caption package documentation for explanation.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [5
+[2
 
 
 ]
@@ -1067,34 +1043,41 @@ Package natbib Warning: Citation(s) may have changed.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 056CEC07BFEED9AF8520E0271B9154C5;1278.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  3AFD192FB933FC95CA48504937DA2568;976.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 14161 strings out of 493315
- 196796 string characters out of 6137904
- 291249 words of memory out of 5000000
- 17363 multiletter control sequences out of 15000+600000
- 15649 words of font info for 59 fonts, out of 8000000 for 9000
+ 13828 strings out of 493315
+ 193788 string characters out of 6137904
+ 262554 words of memory out of 5000000
+ 17058 multiletter control sequences out of 15000+600000
+ 13651 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,45p,1108b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,5n,45p,1108b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (12 pages, 377030 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (9 pages, 306466 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
