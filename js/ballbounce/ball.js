@@ -9,8 +9,8 @@ function Ball (radius, color) {
 
 Ball.prototype.draw = function (context) {
 	context.fillStyle = this.color;
-    context.beginPath();
-    context.arc(this.x, this.y, this.radius, 0, 2*Math.PI, true);
-    context.closePath();
-    context.fill();  
+  context.beginPath();
+  context.arc(this.x, this.y, this.radius, 0, 2*Math.PI, true);
+  context.closePath();
+  context.fill();  
 };

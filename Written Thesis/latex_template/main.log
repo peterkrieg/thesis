@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 NOV 2014 18:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 NOV 2014 21:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1057,14 +1057,25 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 279--279
  []$[]$  
  []
 
-) (./Appendices/AppendixA.tex [13]
+[13] <Figures/ballsbouncing.png, id=396, 1104.125pt x 562.1pt>
+File: Figures/ballsbouncing.png Graphic file (type png)
+
+<use Figures/ballsbouncing.png>
+Package pdftex.def Info: Figures/ballsbouncing.png used on input line 291.
+(pdftex.def)             Requested size: 426.79134pt x 217.27972pt.
+
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 291--292
+ [][] 
+ []
+
+) (./Appendices/AppendixA.tex [14 <./Figures/ballsbouncing.png>]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [14
+[15
 
-]
+]) [16]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1082,7 +1093,7 @@ rieved Novem-ber 10, 2014, from
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [15
+ [17
 
 
 ]
@@ -1091,17 +1102,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 059A482E042F7B9E2CE15BA94A8E5A26;2669.
+(rerunfilecheck)             Checksum: 5873DAAD40DFD1852189840AF4B7BC3F;2669.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 14347 strings out of 493315
- 199024 string characters out of 6137904
- 484663 words of memory out of 5000000
- 17366 multiletter control sequences out of 15000+600000
+ 14356 strings out of 493315
+ 199198 string characters out of 6137904
+ 484752 words of memory out of 5000000
+ 17371 multiletter control sequences out of 15000+600000
  16342 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,45p,1133b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1121,10 +1132,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (22 pages, 476886 bytes).
+Output written on main.pdf (24 pages, 543399 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 460 compressed objects within 5 object streams
- 223 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 469 compressed objects within 5 object streams
+ 226 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
