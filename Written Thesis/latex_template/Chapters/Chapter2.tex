@@ -8,9 +8,30 @@
 
 %----------------------------------------------------------------------------------------
 
+In this chapter, a more advanced simulation of orbiting masses will be introduced.  First, a simple orbit situation will be introduced, followed by more complex examples involving escape velocities.  While the physics still isn't too advanced, the coding necessary is a bit more challenging.  
 
 
 
+\section{Basic Orbit Path}
 
-\section{Background Physics}
+The first simulation will deal with an example of a planet orbiting another much more massive planet.  
+
+\subsection{Background Physics}
+
+
+
+This entire chapter is centered around Newton's law of universal gravitation:
+
+\begin{equation}\label{universalgravity}
+F_g = G \frac{m_1 m_2}{r^2} 
+\end{equation}
+
+Where $F_g$ is the magnitude of the force acting on either mass, G is the gravitational constant ( SI units of $6.67 \hspace{1mm} \frac{Nm^2}{kg^2}$ ), $m_1$ is the mass of one object, $m_2$ is the mass of the other object, and $r$ is the radius separating the two masses.  By Newton's 3rd law, there is an equal and opposite force exerted on each mass.  
+
+This equation can be used to describe the orbiting paths of planets.  For simple cases when one planet orbits another, the variables m and M can be used.  For a first example, we will assume M \textgreater \textgreater  m, that is, one planet has a much greater mass than the other.  Therefore, while each planet exerts an equal force on the other, the acceleration on the massive planet will be negligible.  So, the smaller planet will orbit around the stationary planet, without attracting the larger planet enough to move it.  
+
+\subsection{The Code}  
+
+
+
 

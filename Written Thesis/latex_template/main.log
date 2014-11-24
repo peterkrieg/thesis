@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 17:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,7 +939,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=7, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=83, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -976,13 +976,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-[4
+ [4
 
 
 ]
@@ -999,16 +997,97 @@ Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 ------------------------------------------------------------------------------
 [6
 
-] (./Chapters/Chapter2.tex
-Chapter 1.
-------------------------------------------------------------------------------
- 1 Simulating Orbits
-------------------------------------------------------------------------------
-) [1
+] (./Chapters/Introduction.tex [1
 
 
 
 ]
+<Figures/frames.png, id=155, 701.62125pt x 157.58875pt>
+File: Figures/frames.png Graphic file (type png)
+
+<use Figures/frames.png>
+Package pdftex.def Info: Figures/frames.png used on input line 28.
+(pdftex.def)             Requested size: 426.79134pt x 95.86208pt.
+
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+<Figures/canvas.png, id=157, 670.75594pt x 340.27126pt>
+File: Figures/canvas.png Graphic file (type png)
+
+<use Figures/canvas.png>
+Package pdftex.def Info: Figures/canvas.png used on input line 39.
+(pdftex.def)             Requested size: 227.62204pt x 115.46742pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./Figures/frames.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 61.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 61.
+ [3 <./Figures/canvas.png>]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 79--79
+ []$[]$  
+ []
+
+) (./Chapters/Chapter1.tex [4]
+Chapter 1.
+------------------------------------------------------------------------------
+ 1 Some Basic Simulations
+------------------------------------------------------------------------------
+[5
+
+]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
+ []$[]$  
+ []
+
+[6] [7] <Figures/basicbouncingball.png, id=263, 786.94pt x 461.725pt>
+File: Figures/basicbouncingball.png Graphic file (type png)
+
+<use Figures/basicbouncingball.png>
+Package pdftex.def Info: Figures/basicbouncingball.png used on input line 112.
+(pdftex.def)             Requested size: 426.79134pt x 250.41277pt.
+
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 112--113
+ [][] 
+ []
+
+[8 <./Figures/basicbouncingball.png>] [9]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 193--193
+ []$[]$  
+ []
+
+[10] [11] [12]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 279--279
+ []$[]$  
+ []
+
+[13] <Figures/ballsbouncing.png, id=409, 1104.125pt x 562.1pt>
+File: Figures/ballsbouncing.png Graphic file (type png)
+
+<use Figures/ballsbouncing.png>
+Package pdftex.def Info: Figures/ballsbouncing.png used on input line 291.
+(pdftex.def)             Requested size: 426.79134pt x 217.27972pt.
+
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 291--292
+ [][] 
+ []
+
+) (./Chapters/Chapter2.tex [14 <./Figures/ballsbouncing.png>]
+Chapter 2.
+------------------------------------------------------------------------------
+ 2 Simulating Orbits
+------------------------------------------------------------------------------
+[15
+
+]) [16]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1025,22 +1104,13 @@ rieved Novem-ber 10, 2014, from
  []
 
 )
-
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 43.
-See the caption package documentation for explanation.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
-[2
+ [17
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
- (./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 
@@ -1050,34 +1120,46 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  3AFD192FB933FC95CA48504937DA2568;976.
+(rerunfilecheck)             Before: 7BDAD62BBCAD02599292BE9A7D37AEC0;3007
+(rerunfilecheck)             After:  3BDCF65D07F3F1923BE21CC0AD56A98F;3143.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 13828 strings out of 493315
- 193788 string characters out of 6137904
- 262554 words of memory out of 5000000
- 17058 multiletter control sequences out of 15000+600000
- 13651 words of font info for 50 fonts, out of 8000000 for 9000
+ 14396 strings out of 493315
+ 199899 string characters out of 6137904
+ 485097 words of memory out of 5000000
+ 17399 multiletter control sequences out of 15000+600000
+ 15990 words of font info for 60 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,5n,45p,1108b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (9 pages, 306466 bytes).
+ 49i,12n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{dummy.204} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (24 pages, 549439 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 490 compressed objects within 5 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
