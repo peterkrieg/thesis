@@ -9,6 +9,7 @@ var m = 1; // planet's mass
 var M = 1000000; // sun's mass
 var G = 1;
 var t0,dt;
+var i =0;
 
 window.onload = init; 
 
@@ -18,9 +19,9 @@ function init() {
 	sun.pos2D = new Vector2D(475,400);	
 	sun.draw(context_bg);
 	// create a moving planet			
-	planet = new Ball(5,'blue',m);
-	planet.pos2D = new Vector2D(375,350);
-	planet.velo2D = new Vector2D(100, -100);
+	planet = new Ball(2,'blue',m);
+	planet.pos2D = new Vector2D(380,420);
+	planet.velo2D = new Vector2D(10, -120);
 	// planet.velo2D = new Vector2D(70,-40);
 	// planet.velo2D = new Vector2D(85,-40);
 	// planet.velo2D = new Vector2D(80,0);

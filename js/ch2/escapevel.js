@@ -22,13 +22,11 @@ function init() {
 	// create a moving planet			
 	planet = new Ball(10,'blue',m);
 	planet.pos2D = new Vector2D(500,2490);
-	planet.velo2D = new Vector2D(0, -74);
+	// planet.velo2D = new Vector2D(0, -74);
+	// planet.velo2D = new Vector2D(0,-68);
+	planet.velo2D = new Vector2D(0,-70);
 	console.log(planet.velo2D.length())
-	// planet.velo2D = new Vector2D(70,-40);
-	// planet.velo2D = new Vector2D(85,-40);
-	// planet.velo2D = new Vector2D(80,0);
-	// planet.velo2D = new Vector2D(100,0);
-	// planet.velo2D = new Vector2D(195,0);		
+
 	planet.draw(context);
 	// make the planet orbit the sun
 	t0 = new Date().getTime(); 
