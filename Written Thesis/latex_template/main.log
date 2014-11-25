@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  25 NOV 2014 02:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  25 NOV 2014 02:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,9 +863,6 @@ Package hyperref Info: Option `colorlinks' set `false' on input line 47.
 
 LaTeX Warning: Label `lst:changestoorbit' multiply defined.
 
-
-LaTeX Warning: Label `fig:data1' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -1131,16 +1128,29 @@ Package pdftex.def Info: Figures/fig1.pdf used on input line 231.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/fig2.pdf, id=564, 794.97pt x 614.295pt>
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig2.pdf): PDF inclusion: 
+found PDF version <1.6>, but at most version <1.5> allowed
+<Figures/fig2.pdf, id=564, 683.39232pt x 468.51538pt>
 File: Figures/fig2.pdf Graphic file (type pdf)
  <use Figures/fig2.pdf>
 Package pdftex.def Info: Figures/fig2.pdf used on input line 240.
-(pdftex.def)             Requested size: 341.43306pt x 263.84175pt.
+(pdftex.def)             Requested size: 341.43306pt x 234.07838pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [21] [22 <./Figures/fig1.pdf> <./Figures/fig2.pdf>]
+<Figures/fig3.pdf, id=565, 688.44771pt x 471.88657pt>
+File: Figures/fig3.pdf Graphic file (type pdf)
+ <use Figures/fig3.pdf>
+Package pdftex.def Info: Figures/fig3.pdf used on input line 249.
+(pdftex.def)             Requested size: 341.43306pt x 234.02739pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] [22 <./Figures/fig1.pdf> <./Figures/fig2.pdf>]) [23 <./Figures/fig3.pdf>]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1158,7 +1168,7 @@ rieved Novem-ber 10, 2014, from
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [23
+ [24
 
 
 ]
@@ -1167,7 +1177,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 52B149D0F81DFD45EE5AABDCCA1526A2;3449.
+(rerunfilecheck)             Checksum: 00F0BA8F0EE63506751C0C6BEF68B093;3449.
 
 
 LaTeX Warning: There were undefined references.
@@ -1178,10 +1188,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 14539 strings out of 493315
- 201787 string characters out of 6137904
- 485626 words of memory out of 5000000
- 17420 multiletter control sequences out of 15000+600000
+ 14548 strings out of 493315
+ 201925 string characters out of 6137904
+ 485796 words of memory out of 5000000
+ 17426 multiletter control sequences out of 15000+600000
  15990 words of font info for 60 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1205,10 +1215,10 @@ ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (30 pages, 688761 bytes).
+Output written on main.pdf (31 pages, 728765 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 704 compressed objects within 8 object streams
- 359 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 697 compressed objects within 7 object streams
+ 361 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
