@@ -57,7 +57,7 @@ function move(){
 	updateVelo(planet);
 	i++;
 	if(i<781){
-		if(i%60===0){
+		if(i%30===0){
 			console.log(i);
 			context.strokeStyle = '#ff0000';
 			context.moveTo(planet.x, planet.y);
