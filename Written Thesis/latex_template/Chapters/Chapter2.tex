@@ -187,7 +187,7 @@ To test the physics behind the escape velocity, a slightly different scenario ca
 
 
 \setstretch{1}
-\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Various tools functions used for orbit simulation, label=lst:basicorbittools]
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=New conditions for escape velocity simulation, label=lst:changestoorbit]
 sun = new Ball(400,'orange',M);
 sun.pos2D = new Vector2D(
 
@@ -197,6 +197,36 @@ planet.pos2D = new Vector2D(500,2490);
 planet.velo2D = new Vector2D(0, -80);
 \end{lstlisting}
 \setstretch{2}
+
+These changes made the larger planet look visually bigger, to simulate the effect of a massive planet.  It also positioned the object to begin right on the surface of the larger planet (in this case, 410 pixels above the center of mass of the larger planet).  To calculate the escape velocity for the situation above, equation \ref{eq:escapevelocity} can be used, but understanding some key factors:
+
+\begin{enumerate}
+\item The escape velocity calculated will be in $\frac{px}{s}$ instead of SI unit $\frac{m}{s}$
+\item The masses of each planet don't need to contain units, it can more just represent a ratio between the large and small planet.  Therefore, each mass will be a unitless quantity, just used as a test of the escape velocity equation.
+\item Similarly to  \#2, the gravitational constant G doesn't have to include units, since this test is only in a more theoretical sense, and doesn't use actual units of mass.  However, using dimensional analysis, for the equation below to make sense, G could be viewed as having units of $\frac{px^3}{s^2}$.
+\end{enumerate}
+
+Proceeding with these conditions in mind, the escape velocity for the simulation of code listing \ref{lst:updatedorbit}
+can be calculated as shown below:
+
+\begin{equation}\label{eq:calcvescape}
+ v_{esc} = \sqrt{\frac{2*1 \frac{px^3}{s^2}*1000000}{410 px}} \approx 69.843 \frac{px}{s} 
+\end{equation}
+
+Therefore, with the program simulation, any initial speed greater than this value will escape the gravitational influence of the larger planet.  To test this, I used the following code to print out values of the velocity continuously:
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Code , label=lst:changestoorbit]
+var i =0;
+i++;
+if(i%15 ===0){console.log(planet.velo2D.length());}
+\end{lstlisting}
+\setstretch{2}
+
+
+
+
+
 
 
 

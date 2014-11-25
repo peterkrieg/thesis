@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 23:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 NOV 2014 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1102,7 +1102,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 198--198
  []$[]$  
  []
 
-) [20]
+[20]) [21]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1120,7 +1120,7 @@ rieved Novem-ber 10, 2014, from
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [21
+ [22
 
 
 ]
@@ -1135,25 +1135,25 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 342285631F7BBFF0BD9E0A15D1993B7E;3449
-(rerunfilecheck)             After:  08AE1740878AE298A1F218ACF296EBA0;3449.
+(rerunfilecheck)             Before: A9F6F14679783B2A06741E0CC17D651C;3449
+(rerunfilecheck)             After:  927DF250863056A9185B18C760AA80F3;3449.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 14515 strings out of 493315
- 201421 string characters out of 6137904
- 485390 words of memory out of 5000000
- 17408 multiletter control sequences out of 15000+600000
+ 14523 strings out of 493315
+ 201518 string characters out of 6137904
+ 485510 words of memory out of 5000000
+ 17411 multiletter control sequences out of 15000+600000
  15990 words of font info for 60 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{dummy.302} has been referenced but does not exist
+pdfTeX warning (dest): name{dummy.313} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.301} has been referenced but does not exist
+pdfTeX warning (dest): name{section.312} has been referenced but does not exist
 , replaced by a fixed one
 
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
@@ -1175,10 +1175,10 @@ ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (28 pages, 575708 bytes).
+Output written on main.pdf (29 pages, 577857 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 647 compressed objects within 7 object streams
- 349 named destinations out of 1000 (max. 500000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 656 compressed objects within 7 object streams
+ 354 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
