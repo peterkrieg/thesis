@@ -13,6 +13,12 @@ var i =0;
 
 window.onload = init; 
 
+context.strokeStyle = '#ff0000';
+context.moveTo(0,0);
+context.lineTo(300,150);
+context.stroke();
+
+
 function init() {
 	// create a stationary sun
 	sun = new Ball(70,'orange',M);
@@ -49,6 +55,16 @@ function move(){
 	calcForce();
 	updateAccel();
 	updateVelo(planet);
+	i++;
+	if(i<781){
+		if(i%60===0){
+			console.log(i);
+			context.strokeStyle = '#ff0000';
+			context.moveTo(planet.x, planet.y);
+			context.lineTo(475, 400);
+			context.stroke();
+		}
+	}
 }
 
 function moveObject(obj){
