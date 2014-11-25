@@ -22,7 +22,7 @@ function init() {
 	// create a moving planet			
 	planet = new Ball(10,'blue',m);
 	planet.pos2D = new Vector2D(500,2490);
-	planet.velo2D = new Vector2D(0, -80);
+	planet.velo2D = new Vector2D(0, -68.4);
 	// planet.velo2D = new Vector2D(70,-40);
 	// planet.velo2D = new Vector2D(85,-40);
 	// planet.velo2D = new Vector2D(80,0);
@@ -37,6 +37,7 @@ function init() {
 function animFrame(){
 	animId = requestAnimationFrame(animFrame,canvas);
 	onTimer(); 
+	console.log(planet.velo2D.length())
 }
 function onTimer(){
 	var t1 = new Date().getTime(); 
@@ -51,7 +52,7 @@ function move(){
 	updateAccel();
 	updateVelo(planet);
 	i++;
-	if(i%60 ===0){console.log(planet.velo2D.length());}
+	if(i%15 ===0){console.log(planet.velo2D.length());}
 }
 
 function moveObject(obj){
