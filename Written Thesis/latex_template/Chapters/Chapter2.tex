@@ -162,8 +162,41 @@ Forces.gravity = function(G,m1,m2,r){
 \end{lstlisting}
 \setstretch{2}
 
+
 \section{Escape Velocity}
 
+The previous section tested situations where the planet orbited the sun continuously.  However, if the speed is great enough, the orbiting body is capable of ``escaping'' from the larger planet's influence.  The minimum speed necessary for this is called the escape velocity.  
+
+This can be derived by understanding conversation of energy.  When an object leaves the surface of a planet, it will have an initial kinetic energy, and potential gravitational energy.  This will equal the final potential energy, defined as a condition when the final kinetic and gravitational potential energy is 0.  This relationship is shown in the equation below:
+
+$$K_i + U_{g_{i}} = K_f + U_{g_{f}}$$
+
+Knowing that the final kinetic and gravitational energy is 0, this equation becomes:
+
+$$\frac{1}{2}mv_{esc}^2 - \frac{GMm}{r} = 0 + 0  $$
+
+Solving for $v_{esc}$ yields the following:
+
+\begin{equation}\label{eq:escapevelocity}
+v_{esc} = \sqrt{\frac{2GM}{r}}
+\end{equation}
+
+Where G is the gravitational constant, M is the mass of the planet the object is escaping from, and r is the starting distance from the center of mass of the planet.  
+
+To test the physics behind the escape velocity, a slightly different scenario can be created with a different program.  This simulation will have the object begin right at the surface of the larger planet, to emulate the process of ``escaping'' from the planet's gravity influence.  To visualize this, a much larger canvas will be used, and some code changes will be utilized, seen below:
+
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Various tools functions used for orbit simulation, label=lst:basicorbittools]
+sun = new Ball(400,'orange',M);
+sun.pos2D = new Vector2D(
+
+planet = new Ball(10,'blue',m);
+planet.pos2D = new Vector2D(500,2490);
+
+planet.velo2D = new Vector2D(0, -80);
+\end{lstlisting}
+\setstretch{2}
 
 
 
@@ -175,7 +208,11 @@ Forces.gravity = function(G,m1,m2,r){
 
 
 
-\section{Two-Body Motion}
+
+
+
+
+\section{Kepler's Laws}
 
 
 
