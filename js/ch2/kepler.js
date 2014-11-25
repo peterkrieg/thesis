@@ -6,28 +6,25 @@ var context_bg = canvas_bg.getContext('2d');
 var planet;
 var sun;
 var m = 1; // planet's mass
-var M = 1000000; // sun's mass
+var M = 10000000; // sun's mass
 var G = 1;
 var t0,dt;
 var i =0;
 
 window.onload = init; 
 
-context.strokeStyle = '#ff0000';
-context.moveTo(0,0);
-context.lineTo(300,150);
-context.stroke();
+
 
 
 function init() {
 	// create a stationary sun
 	sun = new Ball(70,'orange',M);
-	sun.pos2D = new Vector2D(475,400);	
+	sun.pos2D = new Vector2D(475,250);	
 	sun.draw(context_bg);
 	// create a moving planet			
 	planet = new Ball(2,'blue',m);
-	planet.pos2D = new Vector2D(380,420);
-	planet.velo2D = new Vector2D(10, -120);
+	planet.pos2D = new Vector2D(180,270);
+	planet.velo2D = new Vector2D(100, -180);
 	// planet.velo2D = new Vector2D(70,-40);
 	// planet.velo2D = new Vector2D(85,-40);
 	// planet.velo2D = new Vector2D(80,0);
@@ -56,12 +53,12 @@ function move(){
 	updateAccel();
 	updateVelo(planet);
 	i++;
-	if(i<781){
+	if(i<960){
 		if(i%30===0){
 			console.log(i);
-			context.strokeStyle = '#ff0000';
+			context.strokeStyle = 'white';
 			context.moveTo(planet.x, planet.y);
-			context.lineTo(475, 400);
+			context.lineTo(sun.x, sun.y);
 			context.stroke();
 		}
 	}
