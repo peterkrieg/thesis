@@ -30,7 +30,129 @@ Where $F_g$ is the magnitude of the force acting on either mass, G is the gravit
 
 This equation can be used to describe the orbiting paths of planets.  For simple cases when one planet orbits another, the variables m and M can be used.  For a first example, we will assume M \textgreater \textgreater  m, that is, one planet has a much greater mass than the other.  Therefore, while each planet exerts an equal force on the other, the acceleration on the massive planet will be negligible.  So, the smaller planet will orbit around the stationary planet, without attracting the larger planet enough to move it.  
 
+
+
+
 \subsection{The Code}  
+
+The full code is shown in the listing below:
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Basic planet orbiting simulation, label=lst:basicorbit]
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d'); 
+var canvas_bg = document.getElementById('canvas_bg');
+var context_bg = canvas_bg.getContext('2d');
+
+var planet;
+var sun;
+var m = 1; // planet's mass
+var M = 1000000; // heavy planet's mass
+var G = 1;
+var t0,dt;
+
+window.onload = init; 
+
+function init() {
+	// create a stationary large planet
+	sun = new Ball(70,'orange',M);
+	sun.pos2D = new Vector2D(275,200);	
+	sun.draw(context_bg);
+	// create a moving planet			
+	planet = new Ball(10,'blue',m);
+	planet.pos2D = new Vector2D(200,50);
+	planet.draw(context);
+	// make the planet orbit the large planet
+	t0 = new Date().getTime(); 
+	animFrame();
+};
+
+function animFrame(){
+	animId = requestAnimationFrame(animFrame,canvas);
+	onTimer(); 
+}
+function onTimer(){
+	var t1 = new Date().getTime(); 
+	dt = 0.001*(t1-t0); 
+	t0 = t1;	
+	if (dt>0.1) {dt=0;};	
+	move();
+}
+function move(){			
+	moveObject(planet);
+	calcForce();
+	updateAccel();
+	updateVelo(planet);
+}
+
+function moveObject(obj){
+	obj.pos2D = obj.pos2D.addScaled(obj.velo2D,dt);	
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	obj.draw(context);	
+}
+function calcForce(){
+	force = Forces.gravity(G,M,m,planet.pos2D.subtract(sun.pos2D));	
+}	
+function updateAccel(){
+	acc = force.multiply(1/m);
+}	
+function updateVelo(obj){
+	obj.velo2D = obj.velo2D.addScaled(acc,dt);				
+}
+\end{lstlisting}
+\setstretch{2}
+
+This program differs from previous ones used so far in that it uses two canvases instead of one.  This is essential for having the large planet remain stationary and not being erased every frame.  Instead, there can be a constant ``background'' canvas containing the stationary planet.  The code begins by initializing the variables planet and sun, where sun simply refers to any large planet that has much more mass.  The gravitational constant $G$ is intialized as a formality just to a value of 1.  G in this simulation isn't necessary, because the constant simply is used for unit conversion.  This will become clear later in this section.  When the web page is loaded, it calls the init function, just as in previous simulations.  The init function creates the sun and planet as objects from the Ball constructor function, exactly as in chapter 1.  Instead of having separate variables x and y in the previous examples, the position information can be stored into a property of each object, which is created using a different constructor function Vector2D.  
+
+The next function, animFrame, functions simply by initializing the javascript animation frame, and then calling the next function, onTimer.  This next function creates a variable dt by converting the unit javascript operates in (ms) to SI units of s.  It then passes the flow of the program onto the next function, move.  This function involves calling 4 functions, the first of which simply updates the position of the planet, erases the foreground canvas, and then draws the updated canvas.  This step can be analyzed through a physics kinematics equation:
+
+\begin{equation}\label{velo}
+x(t+dt) = x(t) + v_x(t)dt
+\end{equation}
+
+This is essentially analagous to Euler's method, by understanding that $v_x = \frac{dx}{dt}$.  
+
+\begin{equation}\label{euler}
+x(t+dt) = x(t) + \frac{dx}{dt}\left(0\right) dt
+\end{equation}
+
+By using constructor functions, with 2 different properties for the x and y position, the planet's location can be updated without updating variables and taking up more space.  The location has to be updated for every frame, but so does the force, acceleration, and velocity.  These next 3 steps are the remaining functions of the move function.  The calcForce function updates the force of gravity acting on the planet, using equation \ref{universalgravity}.  This equation calculates r by calculating the displacement vector between the two planets, and finding the magnitude of that vector.  The updateAccel function simply takes the updated force vector and scales it by a certain ``k'' value which is represented by dividing by the mass.  This is the step that incorporates Newton's 2nd law of $a = \frac{F}{m} $.  The last function updates the velocity of the planet, similar to how the position was updated.  Using Euler's method like before, we come to the following equation
+
+\begin{equation}\label{euleraccel}
+ v (t+dt) =  v(t) + a(t)dt 
+\end{equation}
+
+
+
+
+
+Essentially, what makes this program more complicated is that it uses many other functions to accomplish the overall simulation.  However, this method of programming makes future simulations easier--the same functions can be used, with changed variables.  The code listing below shows these ``tool'' functions that are used in future chapters of this thesis:
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Various tools functions used for orbit simulation, label=lst:basicorbit]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
