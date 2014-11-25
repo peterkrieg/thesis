@@ -129,7 +129,56 @@ By using constructor functions, with 2 different properties for the x and y posi
 Essentially, what makes this program more complicated is that it uses many other functions to accomplish the overall simulation.  However, this method of programming makes future simulations easier--the same functions can be used, with changed variables.  The code listing below shows these ``tool'' functions that are used in future chapters of this thesis:
 
 \setstretch{1}
-\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Various tools functions used for orbit simulation, label=lst:basicorbit]
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Various tools functions used for orbit simulation, label=lst:basicorbittools]
+function Vector2D(x,y) {
+	this.x = x;
+	this.y = y;		
+}	
+Vector2D.prototype = {		
+	lengthSquared: function(){
+		return this.x*this.x + this.y*this.y;
+	},
+	length: function(){
+		return Math.sqrt(this.lengthSquared());
+	},
+	add: function(vec) {
+		return new Vector2D(this.x + vec.x,this.y + vec.y);
+	},
+	subtract: function(vec) {
+		return new Vector2D(this.x - vec.x,this.y - vec.y);
+	},
+	multiply: function(k) {
+		return new Vector2D(k*this.x,k*this.y);
+	},
+	addScaled: function(vec,k) {
+		return new Vector2D(this.x + k*vec.x, this.y + k*vec.y);
+	},	
+
+	function Forces(){
+}
+Forces.gravity = function(G,m1,m2,r){
+	return r.multiply(-G*m1*m2/(r.lengthSquared()*r.length()));
+}
+\end{lstlisting}
+\setstretch{2}
+
+\section{Escape Velocity}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Two-Body Motion}
+
+
+
 
 
 

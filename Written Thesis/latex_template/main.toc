@@ -24,6 +24,8 @@
 \contentsline {section}{\numberline {2.1}Basic Orbit Path}{15}{section.201}
 \contentsline {subsection}{\numberline {2.1.1}Background Physics}{15}{subsection.202}
 \contentsline {subsection}{\numberline {2.1.2}The Code}{16}{subsection.204}
+\contentsline {section}{\numberline {2.2}Escape Velocity}{19}{section.299}
+\contentsline {section}{\numberline {2.3}Two-Body Motion}{19}{section.300}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{20}{dummy.269}
+\contentsline {chapter}{Bibliography}{20}{dummy.301}
