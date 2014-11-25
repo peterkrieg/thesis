@@ -22,7 +22,7 @@ function init() {
 	// create a moving planet			
 	planet = new Ball(10,'blue',m);
 	planet.pos2D = new Vector2D(500,2490);
-	planet.velo2D = new Vector2D(0, -66);
+	planet.velo2D = new Vector2D(0, -74);
 	console.log(planet.velo2D.length())
 	// planet.velo2D = new Vector2D(70,-40);
 	// planet.velo2D = new Vector2D(85,-40);
