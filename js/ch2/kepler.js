@@ -24,6 +24,7 @@ function init() {
 	// create a moving planet			
 	planet = new Ball(2,'blue',m);
 	planet.pos2D = new Vector2D(180,270);
+	planet.oldpos2D = new Vector2D(planet.x, planet.y)
 	planet.velo2D = new Vector2D(100, -180);
 	// planet.velo2D = new Vector2D(70,-40);
 	// planet.velo2D = new Vector2D(85,-40);
@@ -47,12 +48,13 @@ function onTimer(){
 	if (dt>0.1) {dt=0;};	
 	move();
 }
-function move(){			
+function move(){		
+	i++;
+
 	moveObject(planet);
 	calcForce();
 	updateAccel();
 	updateVelo(planet);
-	i++;
 	if(i<960){
 		if(i%30===0){
 			console.log(i);
@@ -60,6 +62,17 @@ function move(){
 			context.moveTo(planet.x, planet.y);
 			context.lineTo(sun.x, sun.y);
 			context.stroke();
+			// console.log('%d  and    %d', planet.x, planet.y);
+			// console.log('distance is %f', Vector2D.distance(planet.pos2D, sun.pos2D));
+			// console.log(Vector2D.distance(planet.pos2D, planet.oldpos2D));
+			var dr = Vector2D.distance(planet.pos2D, planet.oldpos2D);
+			var r =  Vector2D.distance(planet.pos2D, sun.pos2D);
+			// console.log('%f     %f', dr, r)
+			console.log('dA is equal to:  %f', .5*r*dr);
+			planet.oldpos2D=planet.pos2D;
+
+
+
 		}
 	}
 }

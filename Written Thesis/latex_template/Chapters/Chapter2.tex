@@ -334,11 +334,25 @@ Since $L$ and $M_p$ are constants, this equation shows that the rate of change i
 
 \setstretch{1}
 \begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Code for printing out values of speed, label=lst:changestoorbit]
-Put finished code here
-blhasdga
-asdbasd
+if(i<960){
+	if(i%30===0){
+	context.strokeStyle = 'white';
+	context.moveTo(planet.x, planet.y);
+	context.lineTo(sun.x, sun.y);
+	context.stroke();
+	var dr = Vector2D.distance(planet.pos2D, planet.oldpos2D);
+	var r =  Vector2D.distance(planet.pos2D, sun.pos2D);
+	console.log('dA is equal to:  %f', .5*r*dr);
+	planet.oldpos2D=planet.pos2D;
+	}
 \end{lstlisting}
 \setstretch{2}
+
+This code creates a condition where ever .5 seconds, a line is drawn between the position of the sun and the position of the planet.  This visualizes the display of breaking up the orbit path into different area segments, which should all be equal area.  Because the simulation occurs at a consistent rate of 60 frames per second, the lines could be drawn at a consistent rate over time.  The code also calculates a variable r, which is the magnitude of the displacement vector between the two positional vectors of the planet and sun.  The vector dr is also calculated by comparing the positional vectors of the planet between two different times.  With these two variables, the program performs a rough calculation of dA, by understanding it is approximately $\frac{1}{2}$ the area of the parallelogram.  The areas were the same within a reasonable amount of uncertainty and accuracy possible with the javascript program.  The smallest ``dt'' possible in this program is 17 ms due to the limitations of the animation method of javascript.  However, if dt could be made to approach 0, the calculations of dA would likely be closer to one another.
+
+A screenshot of the simulation is shown below for reference:
+
+
 
 
 
