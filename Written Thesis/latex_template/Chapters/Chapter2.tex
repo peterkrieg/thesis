@@ -302,7 +302,7 @@ However, since the angle between $\vec{r}$ and $\vec{v}$ is always 90\textdegree
 
 
 \begin{equation}\label{eq:torquederive}
-\vec{L} = M_p \left|\vec{r} \times \vec{v}\right|
+L = M_p \left|\vec{r} \times \vec{v}\right|
 \end{equation}
 
 This equation can be related to figure \ref{fig:sun2}, which shows the relationship between $\vec{r}$ and $d\vec{r}$.
@@ -320,10 +320,25 @@ $$ dA = \frac{1}{2}|\vec{r} \times d\vec{r}| = \frac{1}{2}\left|\vec{r} \times \
 
 Rearranging equation  to solve for $\left|\vec{r} \times \vec{v}\right|$, and substituting this into the above expression yields the following:
 
-\begin{equation}
-dA = \frac{1}{2}\left(\frac{L}{M_p}\right)dt
+$$ dA = \frac{1}{2}\left(\frac{L}{M_p}\right)dt  $$
+
+Finally, dividing both sides by dt yields the final equation:
+
+\begin{equation}\label{dadt}
+\frac{dA}{dt} = \frac{1}{2}\left(\frac{L}{M_p}\right)
 \end{equation}
 
+Since $L$ and $M_p$ are constants, this equation shows that the rate of change in area is constant.  To visualize this, slight adjustments were made to the simulation of section 1.  The code changes are shown below:
+
+
+
+\setstretch{1}
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Code for printing out values of speed, label=lst:changestoorbit]
+Put finished code here
+blhasdga
+asdbasd
+\end{lstlisting}
+\setstretch{2}
 
 
 
