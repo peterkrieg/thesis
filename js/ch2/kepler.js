@@ -58,7 +58,7 @@ function move(){
 	if(i<960){
 		if(i%30===0){
 			console.log(i);
-			context.strokeStyle = 'black';
+			context.strokeStyle = 'white';
 			context.moveTo(planet.x, planet.y);
 			context.lineTo(sun.x, sun.y);
 			context.stroke();
