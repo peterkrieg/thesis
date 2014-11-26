@@ -256,25 +256,7 @@ This code operates by printing out the value of the speed of object 4 times per 
 
 These 3 figures show the stuff that happens with differet velocitias.  need to talk about how near the escape velocity, intersting things happen.  obvious results would occur far away from it.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores obcaecati provident aliquam, impedit quidem iusto voluptatibus temporibus nihil error id est! Adipisci atque aut nostrum, recusandae, quae magnam repellat est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint distinctio autem, officia facilis molestiae veniam beatae, a deserunt laborum, optio earum laudantium atque aliquam, rerum incidunt hic repellat similique ratione?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt atque amet, officiis consectetur adipisci debitis vero suscipit in doloribus, pariatur ipsa, accusantium aspernatur ab minima fugiat consequuntur distinctio, voluptates! Corrupti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti eos quibusdam enim excepturi. Ea, aspernatur sed excepturi beatae, quod consequatur nisi, debitis blanditiis tempore vero vitae asperiores necessitatibus iure?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+These 3 figures show the speed vs. time for different intial velocities.  Figure \ref{fig:data1} shows an initial speed of 66, which isn't enough for the required 69.843 speed to leave the influence of the larger planet.  The object rises far away from the planet, slows down, and then reaches a point where the speed is 0, and then reverse direction and accelerates back towards the planet.  Figures \ref{fig:data2} and \ref{fig:data3} show initial speeds greater than that of the escape velocity, and the effect is clear: the speed tapers off eventually to an end velocity, as r approaches $\infty$ and the gravity force approaches 0.  If the initial speed exactly equaled the escape velocity, in theory the final speed of the object would approach 0, and r approaches $\infty$.  However, this simulation would take a very long time to do.  All of these graphs were plotted over times ranging from 400 to 700 seconds, and since the speed was printed 4 times per second by the computer program, there were thousands of data points plotted overall. 
 
 
 
@@ -285,6 +267,62 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores obcaecati p
 
 
 
+In the early 1600's Johannes Kepler proposed a series of laws that explained how planets orbit the sun.  This was the support the scientific-based heliocentric model, which conflicted with the geocentric model before that.  These 3 laws are shown below:
+
+
+
+\begin{enumerate}
+\item All planets move in ellpitical orbits with the Sun at one focus
+\item The radius vector drawn from the Sun to a planet sweeps out equal areas in equal time intervals
+\item The square of the orbital period of any planet is proportional to the cube of the semimajor axis of the elliptical orbit
+\end{enumerate}
+
+The simulation in this section will help visualize law \#2, using the orbit program already created in section 2.1  This law can be derived by understanding the situation of a planet orbiting the sun in an ellpitical.  The sun is assumed to be much more massive so it doesn't move.  At any instant along the path of orbit, the planet has a gravitational force pointing towards the sun, and it's velocity is tangential to this inward force.  This can be visualized in figure \ref{fig:sun1}.  
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=8cm]{Figures/sun1.png}
+	\caption{Basic model of planet orbiting a sun}
+	\label{fig:sun1}
+\end{figure}
+
+
+The gravitational force is a central force that always points antiparallet to the radius vector $\vec{r}$.  Knowing the radius vector and force on the planet at any point, the torque can be calculated, from the equation below:
+
+\begin{equation}\label{eq:torque}
+\vec{\tau} = \vec{r}\times\vec{F_g} = \frac{d\vec{L}}{dt}
+\end{equation}
+
+
+Because the radius and force vector are always antiparallel to one another, the torque, and therefore, the change in angular momentum will equal 0.  In other words, $\vec{L}$ will remain constant.  Knowing that $\vec{p} = M_p \times \vec{v}$, the following can be derived:
+
+$$ \vec{L} = \vec{r}\times \vec{P} = M_p \vec{r}\times\vec{v}  $$
+
+However, since the angle between $\vec{r}$ and $\vec{v}$ is always 90\textdegree, the equation above can expressed as:
+
+
+\begin{equation}\label{eq:torquederive}
+\vec{L} = M_p \left|\vec{r} \times \vec{v}\right|
+\end{equation}
+
+This equation can be related to figure \ref{fig:sun2}, which shows the relationship between $\vec{r}$ and $d\vec{r}$.
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=8cm]{Figures/sun2.png}
+	\caption{Relationship between  $\vec{r}$ and $d\vec{r}$}
+	\label{fig:sun2}
+\end{figure}
+
+$\vec{r} \times d\vec{r}$ equals the area of the parallelogram in figure \ref{fig:sun2}.  As $dt \rightarrow  0$, the area $dA$ equals $\frac{1}{2}$ the area of this same parallelogram.  Using this relationships yields the following:
+
+$$ dA = \frac{1}{2}|\vec{r} \times d\vec{r}| = \frac{1}{2}\left|\vec{r} \times \vec{v} dt \right| = \frac{1}{2}\left|\vec{r} \times \vec{v}\right| dt  $$
+
+Rearranging equation  to solve for $\left|\vec{r} \times \vec{v}\right|$, and substituting this into the above expression yields the following:
+
+\begin{equation}
+dA = \frac{1}{2}\left(\frac{L}{M_p}\right)dt
+\end{equation}
 
 
 
