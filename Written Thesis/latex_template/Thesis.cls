@@ -181,7 +181,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Physics Simulations Using Javascript} % Your thesis title - this is used in the title and abstract
+\thesistitle{Mechanics Simulations Using Javascript} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Gene Clough} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
