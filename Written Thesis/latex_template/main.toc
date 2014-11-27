@@ -31,4 +31,4 @@
 \contentsline {subsection}{\numberline {3.1.1}Rigid Body Experiencing Torque}{31}{subsection.352}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{32}{dummy.353}
+\contentsline {chapter}{Bibliography}{33}{dummy.422}
