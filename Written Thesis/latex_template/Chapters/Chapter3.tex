@@ -22,7 +22,19 @@ To rotate a rigid body about an axis, a force must be applied to create a moment
 \end{equation}
 
 
-Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to involve both translational and rotational motion.  
+Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to involve both translational and rotational motion. 
+
+While moment of torque represents resistance to angular motion, moment of inertia represents resistance to angular \textit{acceleration}.  For a continuous distribution of mass like a rigid body, the moment of intertia is defined by the following:
+
+\begin{equation}\label{momentofintertia}
+I =   \int  r^2 dm
+\end{equation}
+
+Lastly, while linear momentum is related to translational motion, angular momentum is related to rotational motion.  Angular momentum is defined by:  $\vec{L} = \vec{r} \times \vec{p}$.  A rigid body can be interpreted as a collection of particles all rotating with the same angular velocity $\omega$, which allows for the following equation:
+
+\begin{equation}
+L = \Sigma m_i r_i^2 \omega
+\end{equation}
 
 
 
