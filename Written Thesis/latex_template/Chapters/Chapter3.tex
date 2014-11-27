@@ -11,8 +11,32 @@
 Previous chapters have disregarded rotational motion of solid bodies.  This chapters examines the mechanics of rigid body rotations and collisions through angular momentum fixed axis rotation.  Simulations will involve rigid body collisions.
 
 
-\section{Background Physics}
+\section{Angular Momentum and Torque}
 
-Previous sections in this thesis have simply involved translational motion.  The theorem of rigid body motion states that the displacement of any rigid body can be decomposed into two independent motions: the translation of the center of mass, and the rotation about the center of mass.  A rigid body in general is defined as an object that maintains its shape and size when a force is applied to it.  In reality, all objects experience some level of deformation, however for the purpose of these simulations it is safe to ignore this.    
+Previous sections in this thesis have simply involved translational motion.  The theorem of rigid body motion states that the displacement of any rigid body can be decomposed into two independent motions: the translation of the center of mass, and the rotation about the center of mass.  A rigid body in general is defined as an object that maintains its shape and size when a force is applied to it.  In reality, all objects experience some level of deformation, however for the purpose of these simulations it is safe to ignore this.  
+
+To rotate a rigid body about an axis, a force must be applied to create a moment of torque, given by the equation below:
+
+\begin{equation} \label{eq:torquegeneral}
+\vec{\tau} = \vec{r} \times \vec{F}
+\end{equation}
+
+
+Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to involve both translational and rotational motion.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Rigid Body Collision}
+
 
 
