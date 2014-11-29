@@ -222,7 +222,7 @@ if(i%15 ===0){console.log(planet.velo2D.length());}
 \end{lstlisting}
 \setstretch{2}
 
-This code operates by printing out the value of the speed of object 4 times per second, understanding that i is incremented by 1 for each frame, and there are the usual 60 frames per second.  The data is outputted through the console.log() method, which prints it onto the web browser.  This data was then plotted for different initial speeds, and the results are shown below:
+This code operates by printing out the value of the speed of object 4 times per second, understanding that i is incremented by 1 for each frame, and there are the usual 60 frames per second.  The data is outputted through the console.log() method, which prints it onto the web browser.  This data was then plotted for different initial speeds, and the results are shown in Figures 2.1-2.3.
 
 
 \begin{figure}[h] 
@@ -253,7 +253,6 @@ This code operates by printing out the value of the speed of object 4 times per 
 
 
 
-These 3 figures show the stuff that happens with differet velocitias.  need to talk about how near the escape velocity, intersting things happen.  obvious results would occur far away from it.
 
 These 3 figures show the speed vs. time for different intial velocities.  Figure \ref{fig:data1} shows an initial speed of 66, which isn't enough for the required 69.843 speed to leave the influence of the larger planet.  The object rises far away from the planet, slows down, and then reaches a point where the speed is 0, and then reverse direction and accelerates back towards the planet.  Figures \ref{fig:data2} and \ref{fig:data3} show initial speeds greater than that of the escape velocity, and the effect is clear: the speed tapers off eventually to an end velocity, as r approaches $\infty$ and the gravity force approaches 0.  If the initial speed exactly equaled the escape velocity, in theory the final speed of the object would approach 0, and r approaches $\infty$.  However, this simulation would take a very long time to do.  All of these graphs were plotted over times ranging from 400 to 700 seconds, and since the speed was printed 4 times per second by the computer program, there were thousands of data points plotted overall. 
 
@@ -266,7 +265,7 @@ These 3 figures show the speed vs. time for different intial velocities.  Figure
 
 
 
-In the early 1600's Johannes Kepler proposed a series of laws that explained how planets orbit the sun.  This was the support the scientific-based heliocentric model, which conflicted with the geocentric model before that.  These 3 laws are shown below:
+In the early 1600's Johannes Kepler proposed a series of laws that explained how planets orbit the sun.  This was in support of the scientific-based heliocentric model, which conflicted with the geocentric model before that.  These 3 laws are shown below:
 
 
 
@@ -354,7 +353,7 @@ A screenshot of the simulation is shown below for reference:
 \begin{figure}[h] 
 	\centering
 		\includegraphics[width=7cm]{Figures/keplerscreenshot.png}
-	\caption{Screenshot of kepler law test simulation}
+	\caption{Screenshot of Kepler Law test simulation}
 	\label{fig:sun1}
 \end{figure}
 
