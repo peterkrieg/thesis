@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 01:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -872,6 +872,9 @@ LaTeX Warning: Label `lst:changestoorbit' multiply defined.
 
 LaTeX Warning: Label `fig:sun1' multiply defined.
 
+
+LaTeX Warning: Label `lst:ballbounce1' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -951,7 +954,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/logotransparent.png, id=106, 1406.25375pt x 1417.295pt>
+<Pictures/logotransparent.png, id=138, 1406.25375pt x 1417.295pt>
 File: Pictures/logotransparent.png Graphic file (type png)
 
 <use Pictures/logotransparent.png>
@@ -1006,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
 
 ]
-<Figures/frames.png, id=177, 701.62125pt x 157.58875pt>
+<Figures/frames.png, id=217, 701.62125pt x 157.58875pt>
 File: Figures/frames.png Graphic file (type png)
 
 <use Figures/frames.png>
@@ -1017,7 +1020,7 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-<Figures/canvas.png, id=179, 670.75594pt x 340.27126pt>
+<Figures/canvas.png, id=219, 670.75594pt x 340.27126pt>
 File: Figures/canvas.png Graphic file (type png)
 
 <use Figures/canvas.png>
@@ -1052,7 +1055,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
  []$[]$  
  []
 
-[6] [7] <Figures/basicbouncingball.png, id=285, 786.94pt x 461.725pt>
+[6] [7] <Figures/basicbouncingball.png, id=325, 786.94pt x 461.725pt>
 File: Figures/basicbouncingball.png Graphic file (type png)
 
 <use Figures/basicbouncingball.png>
@@ -1073,7 +1076,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 279--279
  []$[]$  
  []
 
-[13] <Figures/ballsbouncing.png, id=430, 1104.125pt x 562.1pt>
+[13] <Figures/ballsbouncing.png, id=470, 1104.125pt x 562.1pt>
 File: Figures/ballsbouncing.png Graphic file (type png)
 
 <use Figures/ballsbouncing.png>
@@ -1120,7 +1123,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 223--223
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig1.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig1.pdf, id=569, 688.44771pt x 474.414pt>
+<Figures/fig1.pdf, id=609, 688.44771pt x 474.414pt>
 File: Figures/fig1.pdf Graphic file (type pdf)
  <use Figures/fig1.pdf>
 Package pdftex.def Info: Figures/fig1.pdf used on input line 231.
@@ -1133,7 +1136,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig2.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig2.pdf, id=570, 683.39232pt x 468.51538pt>
+<Figures/fig2.pdf, id=610, 683.39232pt x 468.51538pt>
 File: Figures/fig2.pdf Graphic file (type pdf)
  <use Figures/fig2.pdf>
 Package pdftex.def Info: Figures/fig2.pdf used on input line 240.
@@ -1142,7 +1145,7 @@ Package pdftex.def Info: Figures/fig2.pdf used on input line 240.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/fig3.pdf, id=571, 688.44771pt x 471.88657pt>
+<Figures/fig3.pdf, id=611, 688.44771pt x 471.88657pt>
 File: Figures/fig3.pdf Graphic file (type pdf)
  <use Figures/fig3.pdf>
 Package pdftex.def Info: Figures/fig3.pdf used on input line 249.
@@ -1152,13 +1155,13 @@ Package pdftex.def Info: Figures/fig3.pdf used on input line 249.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21] [22 <./Figures/fig1.pdf> <./Figures/fig2.pdf>] [23 <./Figures/fig3.pdf>]
-<Figures/sun1.png, id=655, 537.00626pt x 354.32375pt>
+<Figures/sun1.png, id=695, 537.00626pt x 354.32375pt>
 File: Figures/sun1.png Graphic file (type png)
  <use Figures/sun1.png>
 Package pdftex.def Info: Figures/sun1.png used on input line 284.
 (pdftex.def)             Requested size: 227.62204pt x 150.18822pt.
 
-[24 <./Figures/sun1.png>] <Figures/sun2.png, id=668, 530.98375pt x 315.1775pt>
+[24 <./Figures/sun1.png>] <Figures/sun2.png, id=708, 530.98375pt x 315.1775pt>
 File: Figures/sun2.png Graphic file (type png)
 
 <use Figures/sun2.png>
@@ -1169,7 +1172,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 348--348
  []$[]$  
  []
 
-[26] <Figures/keplerscreenshot.png, id=695, 544.0325pt x 626.34pt>
+[26] <Figures/keplerscreenshot.png, id=735, 544.0325pt x 626.34pt>
 File: Figures/keplerscreenshot.png Graphic file (type png)
 
 <use Figures/keplerscreenshot.png>
@@ -1182,7 +1185,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [28
 
-] <Figures/rigidbody.png, id=706, 446.66875pt x 342.27875pt>
+] <Figures/rigidbody.png, id=746, 446.66875pt x 342.27875pt>
 File: Figures/rigidbody.png Graphic file (type png)
 
 <use Figures/rigidbody.png>
@@ -1209,7 +1212,56 @@ Chapter 4.
 ------------------------------------------------------------------------------
 [34
 
-]) [35]
+]) (./Appendices/AppendixA.tex [35]
+Appendix A.
+------------------------------------------------------------------------------
+ A Full Code Listings From Ch. 1
+------------------------------------------------------------------------------
+[36
+
+]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 63--63
+ []$[]$  
+ []
+
+[37]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 127--127
+ []$[]$  
+ []
+
+[38]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 203--203
+ []$[]$  
+ []
+
+
+Overfull \hbox (40.0pt too wide) in paragraph at lines 224--224
+ []$[]$  
+ []
+
+) (./Appendices/AppendixB.tex [39]
+Appendix B.
+------------------------------------------------------------------------------
+ B Full Code Listings From Ch. 2
+------------------------------------------------------------------------------
+[40
+
+]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 74--74
+ []$[]$  
+ []
+
+[41]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 147--147
+ []$[]$  
+ []
+
+[42]
+Overfull \hbox (40.0pt too wide) in paragraph at lines 233--233
+ []$[]$  
+ []
+
+) [43]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1227,7 +1279,7 @@ rieved Novem-ber 10, 2014, from
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 358.
- [36
+ [44
 
 
 ]
@@ -1236,7 +1288,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 358.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 358.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 358.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D4F863B55CC5DA6C8F2007BEED7A6636;3945.
+(rerunfilecheck)             Checksum: 5AF7A841B4EB29F54F6BCE493B37DAA5;5973.
 
 
 LaTeX Warning: There were undefined references.
@@ -1247,10 +1299,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 358.
  ) 
 Here is how much of TeX's memory you used:
- 14776 strings out of 493315
- 205093 string characters out of 6137904
- 487352 words of memory out of 5000000
- 17526 multiletter control sequences out of 15000+600000
+ 15221 strings out of 493315
+ 210857 string characters out of 6137904
+ 500541 words of memory out of 5000000
+ 17537 multiletter control sequences out of 15000+600000
  19678 words of font info for 75 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,14n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1274,10 +1326,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (42 pages, 1166740 bytes).
+Output written on main.pdf (50 pages, 1207234 bytes).
 PDF statistics:
- 999 PDF objects out of 1000 (max. 8388607)
- 877 compressed objects within 9 object streams
- 475 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1575 PDF objects out of 1728 (max. 8388607)
+ 1439 compressed objects within 15 object streams
+ 902 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -28,5 +28,13 @@
 \contentsline {section}{\numberline {3.2}The Code}{31}{section.349}
 \contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.419}
 \vspace {2em}
+\contentsline {chapter}{\numberline {A}Full Code Listings From Ch. 1}{36}{appendix.424}
+\contentsline {section}{\numberline {A.1}Simulation \#1: Simple Ball Bouncing}{36}{section.425}
+\contentsline {section}{\numberline {A.2}Simulation \#2: More Advanced Ball Bouncing}{37}{section.477}
+\contentsline {section}{\numberline {A.3}Simulation \#3: Multiple Balls Bouncing}{38}{section.538}
+\contentsline {chapter}{\numberline {B}Full Code Listings From Ch. 2}{40}{appendix.628}
+\contentsline {section}{\numberline {B.1}Simulation \#4: Simple Orbit}{40}{section.629}
+\contentsline {section}{\numberline {B.2}Simulation \#5: Escape Velocity}{41}{section.692}
+\contentsline {section}{\numberline {B.3}Simulation \#6: Kepler's 2nd Law}{42}{section.761}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{36}{dummy.424}
+\contentsline {chapter}{Bibliography}{44}{dummy.844}
