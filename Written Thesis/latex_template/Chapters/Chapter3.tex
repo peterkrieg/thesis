@@ -160,7 +160,13 @@ function updateVelo(obj){
 \end{lstlisting}
 \setstretch{2}
 
-This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force brining the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, 
+This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force brining the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, equation \ref{eq:Newtonaccel} stated previously.  
+
+The angular velocity begins at 0 in this simulation, but is changed by the angular acceleration, similar to how the translational velocity is changed by the translational acceleration.  The object is rotated appropriately according to the method of listing \ref{lst:rotation}.  
+
+Like some other simulations in this book, an external library of some code was used to speed up the development process.  However, this library features simple methods like finding the distance between two vectors.  These libraries of ``tools'' code are shown in the appendices.  
+
+
 
 
 
