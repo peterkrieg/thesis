@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {2.3}Kepler's Laws}{23}{section.317}
 \contentsline {chapter}{\numberline {3}Rigid Body Motion}{28}{chapter.339}
 \contentsline {section}{\numberline {3.1}Angular Momentum and Torque}{28}{section.340}
-\contentsline {subsection}{\numberline {3.1.1}Rigid Body Experiencing Torque}{31}{subsection.349}
+\contentsline {section}{\numberline {3.2}The Code}{31}{section.349}
 \vspace {2em}
 \vspace {2em}
 \contentsline {chapter}{Bibliography}{33}{dummy.419}

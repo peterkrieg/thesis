@@ -66,13 +66,13 @@ T = \mathlarger{\mathlarger{\mathlarger{\Sigma}}} m r^2 \alpha
 
 Again, understanding the equation for moment of inertia, and subsituting back for vectors yields the following:
 
-\begin{equation}
+\begin{equation}\label{eq:Newtonaccel}
 \vec{T} = I \vec{\alpha}
 \end{equation}
 
 This formula is analagous to the common Newton's 2nd law of  $F = ma$ for rotational motion, instead of translational motion.  From this equation, the angular acceleration of any rigid body can be calculated from the torque, which is essential for creating simulations of rigid body rotation.  
 
-\subsection{Rigid Body Experiencing Torque}
+\section{The Code}
 
 To create a basic simulation of an object experiencing torque, it is crucial to understand how to incorporate rotation.   This is done with the following code:
 
@@ -84,7 +84,7 @@ rotate: function(angle){
 \end{lstlisting}
 \setstretch{2}
 
-The rotate method of the Vector2D object returns the updated vector based on the value of the angle argument when the method is called.  The rotate method can be derived using trigonometry, and by understanding the unique difference of the canvas coordinate system described in the introduction.  Essentially, for an angle of rotation $\theta$, the resultant vector would be $(xcos\theta - ysin\theta)\imath + (xsin\theta + ycos\theta)\jmath$.  
+The rotate method of the Vector2D object returns the updated vector based on the value of the angle argument when the method is called.  The rotate method can be derived using trigonometry, and by understanding the unique difference of the canvas coordinate system described in the introduction.  Essentially, for an angle of rotation $\theta$, the resultant vector would be $(xcos\theta - ysin\theta)\imath + (xsin\theta + ycos\theta)\jmath$.  The remaining code of the torque simulation is shown below:  
 
 
 
@@ -159,6 +159,8 @@ function updateVelo(obj){
 }
 \end{lstlisting}
 \setstretch{2}
+
+This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force brining the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, 
 
 
 
