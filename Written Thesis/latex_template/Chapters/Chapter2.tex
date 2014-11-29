@@ -8,8 +8,7 @@
 
 %----------------------------------------------------------------------------------------
 
-In this chapter, a more advanced simulation of orbiting masses will be introduced.  First, a simple orbit situation will be introduced, followed by more complex examples involving escape velocities.  While the physics still isn't too advanced, the coding necessary is a bit more challenging.  
-
+In this chapter, a more advanced simulation of orbiting masses will be introduced.  First, a simple orbit situation will be introduced, followed by more complex examples involving escape velocities.  Finally, Kepler's 2nd law will be examined from a simulation of an orbiting planet.
 
 
 \section{Basic Orbit Path}
@@ -167,7 +166,7 @@ Forces.gravity = function(G,m1,m2,r){
 
 The previous section tested situations where the planet orbited the sun continuously.  However, if the speed is great enough, the orbiting body is capable of ``escaping'' from the larger planet's influence.  The minimum speed necessary for this is called the escape velocity.  
 
-This can be derived by understanding conversation of energy.  When an object leaves the surface of a planet, it will have an initial kinetic energy, and potential gravitational energy.  This will equal the final potential energy, defined as a condition when the final kinetic and gravitational potential energy is 0.  This relationship is shown in the equation below:
+This can be derived by understanding conversation of energy.  When an object leaves the surface of a planet, it will have an initial kinetic energy, and potential gravitational energy.  This will equal the final condition, when the final kinetic and gravitational potential energy is 0.  This relationship is shown in the equation below:
 
 $$K_i + U_{g_{i}} = K_f + U_{g_{f}}$$
 
@@ -206,7 +205,7 @@ These changes made the larger planet look visually bigger, to simulate the effec
 \item Similarly to  \#2, the gravitational constant G doesn't have to include units, since this test is only in a more theoretical sense, and doesn't use actual units of mass.  However, using dimensional analysis, for the equation below to make sense, G could be viewed as having units of $\frac{px^3}{s^2}$.
 \end{enumerate}
 
-Proceeding with these conditions in mind, the escape velocity for the simulation of code listing \ref{lst:updatedorbit}
+Proceeding with these conditions in mind, the escape velocity for the simulation of code listing \ref{lst:changestoorbit}
 can be calculated as shown below:
 
 \begin{equation}\label{eq:calcvescape}

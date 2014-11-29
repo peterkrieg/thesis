@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 02:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 02:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1094,27 +1094,22 @@ Chapter 2.
 [15
 
 ] [16]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 102--102
+Overfull \hbox (40.0pt too wide) in paragraph at lines 101--101
  []$[]$  
  []
 
 [17] [18]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 162--162
+Overfull \hbox (40.0pt too wide) in paragraph at lines 161--161
  []$[]$  
  []
 
 [19]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 198--198
+Overfull \hbox (40.0pt too wide) in paragraph at lines 197--197
  []$[]$  
  []
 
 [20]
-
-LaTeX Warning: Reference `lst:updatedorbit' on page 21 undefined on input line 
-209.
-
-
-Overfull \hbox (40.0pt too wide) in paragraph at lines 223--223
+Overfull \hbox (40.0pt too wide) in paragraph at lines 222--222
  []$[]$  
  []
 
@@ -1122,10 +1117,10 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 223--223
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig1.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig1.pdf, id=609, 688.44771pt x 474.414pt>
+<Figures/fig1.pdf, id=611, 688.44771pt x 474.414pt>
 File: Figures/fig1.pdf Graphic file (type pdf)
  <use Figures/fig1.pdf>
-Package pdftex.def Info: Figures/fig1.pdf used on input line 231.
+Package pdftex.def Info: Figures/fig1.pdf used on input line 230.
 (pdftex.def)             Requested size: 341.43306pt x 235.28085pt.
 
 
@@ -1135,47 +1130,47 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig2.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig2.pdf, id=610, 683.39232pt x 468.51538pt>
+<Figures/fig2.pdf, id=612, 683.39232pt x 468.51538pt>
 File: Figures/fig2.pdf Graphic file (type pdf)
  <use Figures/fig2.pdf>
-Package pdftex.def Info: Figures/fig2.pdf used on input line 240.
+Package pdftex.def Info: Figures/fig2.pdf used on input line 239.
 (pdftex.def)             Requested size: 341.43306pt x 234.07838pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/fig3.pdf, id=611, 688.44771pt x 471.88657pt>
+<Figures/fig3.pdf, id=613, 688.44771pt x 471.88657pt>
 File: Figures/fig3.pdf Graphic file (type pdf)
  <use Figures/fig3.pdf>
-Package pdftex.def Info: Figures/fig3.pdf used on input line 249.
+Package pdftex.def Info: Figures/fig3.pdf used on input line 248.
 (pdftex.def)             Requested size: 341.43306pt x 234.02739pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21] [22 <./Figures/fig1.pdf> <./Figures/fig2.pdf>] [23 <./Figures/fig3.pdf>]
-<Figures/sun1.png, id=695, 537.00626pt x 354.32375pt>
+<Figures/sun1.png, id=698, 537.00626pt x 354.32375pt>
 File: Figures/sun1.png Graphic file (type png)
  <use Figures/sun1.png>
-Package pdftex.def Info: Figures/sun1.png used on input line 284.
+Package pdftex.def Info: Figures/sun1.png used on input line 283.
 (pdftex.def)             Requested size: 227.62204pt x 150.18822pt.
 
-[24 <./Figures/sun1.png>] <Figures/sun2.png, id=708, 530.98375pt x 315.1775pt>
+[24 <./Figures/sun1.png>] <Figures/sun2.png, id=710, 530.98375pt x 315.1775pt>
 File: Figures/sun2.png Graphic file (type png)
 
 <use Figures/sun2.png>
-Package pdftex.def Info: Figures/sun2.png used on input line 312.
+Package pdftex.def Info: Figures/sun2.png used on input line 311.
 (pdftex.def)             Requested size: 227.62204pt x 135.11008pt.
  [25 <./Figures/sun2.png>]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 348--348
+Overfull \hbox (40.0pt too wide) in paragraph at lines 347--347
  []$[]$  
  []
 
-[26] <Figures/keplerscreenshot.png, id=735, 544.0325pt x 626.34pt>
+[26] <Figures/keplerscreenshot.png, id=736, 544.0325pt x 626.34pt>
 File: Figures/keplerscreenshot.png Graphic file (type png)
 
 <use Figures/keplerscreenshot.png>
-Package pdftex.def Info: Figures/keplerscreenshot.png used on input line 357.
+Package pdftex.def Info: Figures/keplerscreenshot.png used on input line 356.
 (pdftex.def)             Requested size: 199.16928pt x 229.30508pt.
 ) (./Chapters/Chapter3.tex [27 <./Figures/keplerscreenshot.png>]
 Chapter 3.
@@ -1184,7 +1179,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [28
 
-] <Figures/rigidbody.png, id=746, 446.66875pt x 342.27875pt>
+] <Figures/rigidbody.png, id=747, 446.66875pt x 342.27875pt>
 File: Figures/rigidbody.png Graphic file (type png)
 
 <use Figures/rigidbody.png>
@@ -1290,18 +1285,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0562EDBEAF96D868A0EDDCE8809016A4;5973.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 358.
  ) 
 Here is how much of TeX's memory you used:
- 15220 strings out of 493315
- 210869 string characters out of 6137904
+ 15219 strings out of 493315
+ 210851 string characters out of 6137904
  500609 words of memory out of 5000000
- 17540 multiletter control sequences out of 15000+600000
+ 17539 multiletter control sequences out of 15000+600000
  19678 words of font info for 75 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,14n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1325,10 +1317,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (50 pages, 1206820 bytes).
+Output written on main.pdf (50 pages, 1206657 bytes).
 PDF statistics:
- 1569 PDF objects out of 1728 (max. 8388607)
- 1433 compressed objects within 15 object streams
+ 1570 PDF objects out of 1728 (max. 8388607)
+ 1434 compressed objects within 15 object streams
  898 named destinations out of 1000 (max. 500000)
  325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
