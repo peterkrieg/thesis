@@ -5,7 +5,6 @@
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.3}
 \vspace {1em}
 \contentsline {chapter}{Contents}{iv}{dummy.4}
-\vspace {2em}
 \hspace {-2em}
 \textbf {Introduction}
 \contentsline {section}{\numberline {0.1}What is a Physics Simulation?}{1}{section.7}
@@ -27,6 +26,7 @@
 \contentsline {chapter}{\numberline {3}Rigid Body Motion}{28}{chapter.339}
 \contentsline {section}{\numberline {3.1}Angular Momentum and Torque}{28}{section.340}
 \contentsline {section}{\numberline {3.2}The Code}{31}{section.349}
+\contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.419}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{34}{dummy.419}
+\contentsline {chapter}{Bibliography}{35}{dummy.424}
