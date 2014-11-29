@@ -37,4 +37,4 @@
 \contentsline {section}{\numberline {B.2}Simulation \#5: Escape Velocity}{41}{section.692}
 \contentsline {section}{\numberline {B.3}Simulation \#6: Kepler's 2nd Law}{42}{section.761}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{44}{dummy.844}
+\contentsline {chapter}{Bibliography}{44}{dummy.839}
