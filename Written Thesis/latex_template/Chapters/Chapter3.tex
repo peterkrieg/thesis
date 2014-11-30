@@ -22,7 +22,7 @@ To rotate a rigid body about an axis, a force must be applied to create a moment
 \end{equation}
 
 
-Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to involve both translational and rotational motion. 
+Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to incorporate both translational and rotational motion. 
 
 While moment of torque represents resistance to angular motion, moment of inertia represents resistance to angular \textit{acceleration}.  For a continuous distribution of mass like a rigid body, the moment of intertia is defined by the following:
 
@@ -160,11 +160,11 @@ function updateVelo(obj){
 \end{lstlisting}
 \setstretch{2}
 
-This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force brining the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, equation \ref{eq:Newtonaccel} stated previously.  
+This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force bringing the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, equation \ref{eq:Newtonaccel} stated previously.  
 
 The angular velocity begins at 0 in this simulation, but is changed by the angular acceleration, similar to how the translational velocity is changed by the translational acceleration.  The object is rotated appropriately according to the method of listing \ref{lst:rotation}.  
 
-Like other simulations in this thesis, an external library of some code was used to speed up the development process.  However, this library features simple methods like finding the distance between two vectors.  These libraries of ``tools'' code are shown in the appendices.  
+As with other simulations in this thesis, an external library of some code was used to speed up the development process.  However, this library features simple methods like finding the distance between two vectors.  These libraries of ``tools'' code are shown in the appendices.  
 
 
 

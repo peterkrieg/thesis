@@ -8,7 +8,7 @@
 
 %----------------------------------------------------------------------------------------
 
-In this chapter, a more advanced simulation of orbiting masses will be introduced.  First, a simple orbit situation will be introduced, followed by more complex examples involving escape velocities.  Finally, Kepler's 2nd law will be examined from a simulation of an orbiting planet.
+In this chapter, a more advanced simulation of orbiting masses will be introduced.  First, a simple orbit situation will be introduced, followed by more complex examples involving escape velocities.  Finally, Kepler's 2nd law will be examined through a simulation of an orbiting planet.
 
 
 \section{Basic Orbit Path}
@@ -19,7 +19,7 @@ The first simulation will deal with an example of a planet orbiting another larg
 
 
 
-This entire chapter is centered around Newton's law of universal gravitation:
+This entire chapter is based upon Newton's law of universal gravitation:
 
 \begin{equation}\label{universalgravity}
 F_g = G \frac{m_1 m_2}{r^2} 
@@ -101,7 +101,7 @@ function updateVelo(obj){
 \end{lstlisting}
 \setstretch{2}
 
-This program differs from previous ones used so far in that it uses two canvases instead of one.  This is essential for having the large planet remain stationary and not being erased every frame.  Instead, there can be a constant ``background'' canvas containing the stationary planet.  The code begins by initializing the variables planet and sun, where sun simply refers to any planet that has much more mass.  The gravitational constant $G$ is intialized as a formality just to a value of 1.  G in this simulation isn't necessary, because the constant simply is used for unit conversion.  This will become clear later in this section.  When the web page is loaded, it calls the init function, just as in previous simulations.  The init function creates the sun and planet as objects from the Ball constructor function, exactly as in chapter 1.  Instead of having separate variables x and y in the previous examples, the position information can be stored into a property of each object, which is created using a different constructor function Vector2D.  
+This program differs from previous ones used so far in that it uses two canvases instead of one.  This makes it possible to have the large planet remain stationary and not be erased every frame.  Instead, there can be a constant ``background'' canvas containing the stationary planet.  The code begins by initializing the variables planet and sun, where sun simply refers to any planet that has much more mass.  The gravitational constant $G$ is intialized as a formality just to a value of 1.  G in this simulation isn't necessary, because the constant simply is used for unit conversion.  This will become clear later in this section.  When the web page is loaded, it calls the init function, just as in previous simulations.  The init function creates the sun and planet as objects from the Ball constructor function, exactly as in chapter 1.  Instead of having separate variables x and y in the previous examples, the position information can be stored into a property of each object, which is created using a different constructor function Vector2D.  
 
 The next function, animFrame, functions simply by initializing the javascript animation frame, and then calling the next function, onTimer.  This next function creates a variable dt by converting the unit javascript operates in (ms) to SI units of s.  It then passes the flow of the program onto the next function, move.  This function involves calling 4 functions, the first of which simply updates the position of the planet, erases the foreground canvas, and then draws the updated canvas.  This step can be analyzed through a physics kinematics equation:
 
@@ -115,7 +115,7 @@ This is essentially analagous to Euler's method, by understanding that $v_x = \f
 x(t+dt) = x(t) + \frac{dx}{dt}\left(0\right) dt
 \end{equation}
 
-By using constructor functions, with 2 different properties for the x and y position, the planet's location can be updated without updating variables and taking up more space.  The location has to be updated for every frame, but so does the force, acceleration, and velocity.  These next 3 steps are the remaining functions of the move function.  The calcForce function updates the force of gravity acting on the planet, using equation \ref{universalgravity}.  This equation calculates r by calculating the displacement vector between the two planets, and finding the magnitude of that vector.  The updateAccel function simply takes the updated force vector and scales it by a certain ``k'' value which is represented by dividing by the mass.  This is the step that incorporates Newton's 2nd law of $a = \frac{F}{m} $.  The last function updates the velocity of the planet, similar to how the position was updated.  Using Euler's method like before, we come to the following equation
+By using constructor functions, with 2 different properties for the x and y position, the planet's location can be updated without updating variables and taking up more space.  The location has to be updated for every frame, but so does the force, acceleration, and velocity.  These next 3 steps are the remaining functions of the move function.  The calcForce function updates the force of gravity acting on the planet, using equation \ref{universalgravity}.  This equation calculates r by calculating the displacement vector between the two planets, and finding the magnitude of that vector.  The updateAccel function simply takes the updated force vector and scales it by a certain ``k'' value which is represented by dividing by the mass.  This is the step that incorporates Newton's 2nd law of $a = \frac{F}{m} $.  The last function updates the velocity of the planet, similar to how the position was updated.  Using Euler's method as before, we come to the following equation
 
 \begin{equation}\label{euleraccel}
  v (t+dt) =  v(t) + a(t)dt 
@@ -166,7 +166,7 @@ Forces.gravity = function(G,m1,m2,r){
 
 The previous section tested situations where the planet orbited the sun continuously.  However, if the speed is great enough, the orbiting body is capable of ``escaping'' from the larger planet's influence.  The minimum speed necessary for this is called the escape velocity.  
 
-This can be derived by understanding conversation of energy.  When an object leaves the surface of a planet, it will have an initial kinetic energy, and potential gravitational energy.  This will equal the final condition, when the final kinetic and gravitational potential energy is 0.\textsuperscript{\cite{engineering}}  This relationship is shown in the equation below:
+This can be derived by understanding conservation of energy.  When an object leaves the surface of a planet, it will have an initial kinetic energy, and potential gravitational energy.  This will equal the final condition, when the final kinetic and gravitational potential energy is 0.\textsuperscript{\cite{engineering}}  This relationship is shown in the equation below:
 
 $$K_i + U_{g_{i}} = K_f + U_{g_{f}}$$
 
@@ -201,7 +201,7 @@ These changes make the larger planet look visually bigger, to simulate the effec
 
 \begin{enumerate}
 \item The escape velocity calculated will be in $\frac{px}{s}$ instead of SI unit $\frac{m}{s}$
-\item The masses of each planet don't need to contain units, it can more just represent a ratio between the large and small planet.  Therefore, each mass will be a unitless quantity, just used as a test of the escape velocity equation.
+\item The masses of each planet don’t need to contain  units,  but can simply  be represented as a ratio between the masses of the large and small planet.  Therefore,  each mass will be a unitless quantity, just  used as a test  of the escape velocity equation.
 \item Similarly to  \#2, the gravitational constant G doesn't have to include units, since this test is only in a more theoretical sense, and doesn't use actual units of mass.  However, using dimensional analysis, for the equation below to make sense, G could be viewed as having units of $\frac{px^3}{s^2}$.
 \end{enumerate}
 
@@ -254,7 +254,7 @@ This code operates by printing out the value of the speed of object 4 times per 
 
 
 
-These 3 figures show the speed vs. time for different intial velocities.  Figure \ref{fig:data1} shows an initial speed of 66, which isn't enough for the required 69.843 speed to leave the influence of the larger planet.  The object rises far away from the planet, slows down, and then reaches a point where the speed is 0, and then reverse direction and accelerates back towards the planet.  Figures \ref{fig:data2} and \ref{fig:data3} show initial speeds greater than that of the escape velocity, and the effect is clear: the speed tapers off eventually to an end velocity, as r approaches $\infty$ and the gravity force approaches 0.  If the initial speed exactly equaled the escape velocity, in theory the final speed of the object would approach 0, and r approaches $\infty$.  However, this simulation would take a very long time to do.  All of these graphs were plotted over times ranging from 400 to 700 seconds, and since the speed was printed 4 times per second by the computer program, there were thousands of data points plotted overall. 
+These 3 figures show the speed vs. time for different intial velocities.  Figure \ref{fig:data1} shows an initial speed of 66, which isn't enough for the required 69.843 speed to leave the influence of the larger planet.  The object rises far away from the planet, slows down, and then reaches a point where the speed is 0, and then reverse direction and accelerates back towards the planet.  Figures \ref{fig:data2} and \ref{fig:data3} show initial speeds greater than that of the escape velocity, and the effect is clear: the speed tapers off eventually to an end velocity, as r approaches $\infty$ and the gravity force approaches 0.  If the initial speed exactly equaled the escape velocity, in theory the final speed of the object would approach 0, and r approaches $\infty$.  However, this simulation would take a very long time to run.  All of these graphs were plotted over times ranging from 400 to 700 seconds, and since the speed was printed 4 times per second by the computer program, there were thousands of data points plotted overall. 
 
 
 
@@ -265,7 +265,7 @@ These 3 figures show the speed vs. time for different intial velocities.  Figure
 
 
 
-In the early 1600's Johannes Kepler proposed a series of laws that explained how planets orbit the sun.\textsuperscript{\cite{klepner}}  This was in support of the scientific-based heliocentric model, which conflicted with the geocentric model before that.  These 3 laws are shown below:
+In the early 1600's Johannes Kepler proposed a series of laws that explained how planets orbit the sun.\textsuperscript{\cite{klepner}}  This was in support of the scientific observation-based heliocentric model, which conflicted with the geocentric model before that.  These 3 laws are shown below:
 
 
 
@@ -346,7 +346,7 @@ if(i<960){
 \end{lstlisting}
 \setstretch{2}
 
-This code creates a condition where ever .5 seconds, a line is drawn between the position of the sun and the position of the planet.  This visualizes the display of breaking up the orbit path into different area segments, which should all be equal area.  Because the simulation occurs at a consistent rate of 60 frames per second, the lines could be drawn at a consistent rate over time.  The code also calculates a variable r, which is the magnitude of the displacement vector between the two positional vectors of the planet and sun.  The vector dr is also calculated by comparing the positional vectors of the planet between two different times.  With these two variables, the program performs a rough calculation of dA, by understanding it is approximately $\frac{1}{2}$ the area of the parallelogram.  The areas were the same within a reasonable amount of uncertainty and accuracy possible with the javascript program.  The smallest ``dt'' possible in this program is 17 ms due to the limitations of the animation method of javascript.  However, if dt could be made to approach 0, the calculations of dA would likely be closer to one another.
+This code creates a condition where every .5 seconds, a line is drawn between the position of the sun and the position of the planet.  This visualizes the display of breaking up the orbit path into different area segments, which should all be equal area.  Because the simulation occurs at a consistent rate of 60 frames per second, the lines could be drawn at a constant rate over time.  The code also calculates a variable r, which is the magnitude of the displacement vector between the two positional vectors of the planet and sun.  The vector dr is also calculated by comparing the positional vectors of the planet between two different times.  With these two variables, the program performs a rough calculation of dA, by understanding it is approximately $\frac{1}{2}$ the area of the parallelogram.  The areas were the same within a reasonable amount of uncertainty and accuracy possible with the javascript program.  The smallest ``dt'' possible in this program is 17 ms due to the limitations of the animation method of javascript.  However, if dt could be made to approach 0, the calculations of dA would likely be closer to one another.
 
 A screenshot of the simulation is shown in figure \ref{fig:screenshot}.  This helps to visually understand Kepler's 2nd law by separating areas of the same change in time by lines.
 
