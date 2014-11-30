@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 22:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 NOV 2014 22:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -870,9 +870,6 @@ LaTeX Warning: Label `lst:changestoorbit' multiply defined.
 LaTeX Warning: Label `lst:changestoorbit' multiply defined.
 
 
-LaTeX Warning: Label `fig:sun1' multiply defined.
-
-
 LaTeX Warning: Label `lst:ballbounce1' multiply defined.
 
 )
@@ -1054,7 +1051,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 76--76
  []$[]$  
  []
 
-[6] [7] <Figures/basicbouncingball.png, id=343, 786.94pt x 461.725pt>
+[6] [7] <Figures/basicbouncingball.png, id=344, 786.94pt x 461.725pt>
 File: Figures/basicbouncingball.png Graphic file (type png)
 
 <use Figures/basicbouncingball.png>
@@ -1066,23 +1063,23 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 112--113
  []
 
 [8 <./Figures/basicbouncingball.png>] [9]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 193--193
+Overfull \hbox (40.0pt too wide) in paragraph at lines 194--194
  []$[]$  
  []
 
 [10] [11] [12]
-Overfull \hbox (40.0pt too wide) in paragraph at lines 279--279
+Overfull \hbox (40.0pt too wide) in paragraph at lines 280--280
  []$[]$  
  []
 
-[13] <Figures/ballsbouncing.png, id=490, 1104.125pt x 562.1pt>
+[13] <Figures/ballsbouncing.png, id=497, 1104.125pt x 562.1pt>
 File: Figures/ballsbouncing.png Graphic file (type png)
 
 <use Figures/ballsbouncing.png>
-Package pdftex.def Info: Figures/ballsbouncing.png used on input line 291.
+Package pdftex.def Info: Figures/ballsbouncing.png used on input line 292.
 (pdftex.def)             Requested size: 426.79134pt x 217.27972pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 292--293
  [][] 
  []
 
@@ -1117,7 +1114,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 222--222
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig1.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig1.pdf, id=632, 688.44771pt x 474.414pt>
+<Figures/fig1.pdf, id=642, 688.44771pt x 474.414pt>
 File: Figures/fig1.pdf Graphic file (type pdf)
  <use Figures/fig1.pdf>
 Package pdftex.def Info: Figures/fig1.pdf used on input line 230.
@@ -1130,7 +1127,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig2.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig2.pdf, id=633, 683.39232pt x 468.51538pt>
+<Figures/fig2.pdf, id=643, 683.39232pt x 468.51538pt>
 File: Figures/fig2.pdf Graphic file (type pdf)
  <use Figures/fig2.pdf>
 Package pdftex.def Info: Figures/fig2.pdf used on input line 239.
@@ -1143,7 +1140,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/fig3.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fig3.pdf, id=634, 688.44771pt x 471.88657pt>
+<Figures/fig3.pdf, id=644, 688.44771pt x 471.88657pt>
 File: Figures/fig3.pdf Graphic file (type pdf)
  <use Figures/fig3.pdf>
 Package pdftex.def Info: Figures/fig3.pdf used on input line 248.
@@ -1153,13 +1150,13 @@ Package pdftex.def Info: Figures/fig3.pdf used on input line 248.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21] [22 <./Figures/fig1.pdf> <./Figures/fig2.pdf>] [23 <./Figures/fig3.pdf>]
-<Figures/sun1.png, id=727, 537.00626pt x 354.32375pt>
+<Figures/sun1.png, id=738, 537.00626pt x 354.32375pt>
 File: Figures/sun1.png Graphic file (type png)
  <use Figures/sun1.png>
 Package pdftex.def Info: Figures/sun1.png used on input line 282.
 (pdftex.def)             Requested size: 227.62204pt x 150.18822pt.
 
-[24 <./Figures/sun1.png>] <Figures/sun2.png, id=737, 530.98375pt x 315.1775pt>
+[24 <./Figures/sun1.png>] <Figures/sun2.png, id=747, 530.98375pt x 315.1775pt>
 File: Figures/sun2.png Graphic file (type png)
 
 <use Figures/sun2.png>
@@ -1170,7 +1167,7 @@ Overfull \hbox (40.0pt too wide) in paragraph at lines 346--346
  []$[]$  
  []
 
-<Figures/keplerscreenshot.png, id=748, 544.0325pt x 626.34pt>
+<Figures/keplerscreenshot.png, id=760, 544.0325pt x 626.34pt>
 File: Figures/keplerscreenshot.png Graphic file (type png)
 
 <use Figures/keplerscreenshot.png>
@@ -1187,7 +1184,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [28
 
-] <Figures/rigidbody.png, id=775, 446.66875pt x 342.27875pt>
+] <Figures/rigidbody.png, id=789, 446.66875pt x 342.27875pt>
 File: Figures/rigidbody.png Graphic file (type png)
 
 <use Figures/rigidbody.png>
@@ -1310,10 +1307,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 358.
  ) 
 Here is how much of TeX's memory you used:
- 15298 strings out of 493315
- 211883 string characters out of 6137904
- 500656 words of memory out of 5000000
- 17542 multiletter control sequences out of 15000+600000
+ 15299 strings out of 493315
+ 211899 string characters out of 6137904
+ 500728 words of memory out of 5000000
+ 17543 multiletter control sequences out of 15000+600000
  19678 words of font info for 75 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,14n,45p,1312b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1337,10 +1334,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (52 pages, 1259564 bytes).
+Output written on main.pdf (52 pages, 1260584 bytes).
 PDF statistics:
- 1685 PDF objects out of 1728 (max. 8388607)
- 1546 compressed objects within 16 object streams
+ 1696 PDF objects out of 1728 (max. 8388607)
+ 1557 compressed objects within 16 object streams
  971 named destinations out of 1000 (max. 500000)
  341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

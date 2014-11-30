@@ -102,7 +102,7 @@ v_f = v_i * C_r
 An essential part of any physics simulation involves \textit{collision detection}.  For the simple bouncing ball simulation, this is accomplished by conditional loops for if the ball's position exceeds the canvas constraints.  
 
 
-The last function of the program, drawBall, simply contains commands for the canvas API to draw.  While these commands can be very complicated and intricate to create the exact visual aesthetic desired, the extent of these commands is not the purpose of this thesis.  Basically, this function works by ``erasing'' the canvas of any previous graphics, and then creating a new visual with the arc() method.   
+The last function of the program, drawBall, simply contains commands for the canvas API to draw.  While these commands can be very complicated and intricate to create the exact visual aesthetic desired, the extent of these commands is not the purpose of this thesis.  Basically, this function works by ``erasing'' the canvas of any previous graphics, and then creating a new visual with the arc() method.\textsuperscript{\cite{basichtml5}}   
 
 The logic of the program can be summarized through the flow chart below:
 
@@ -124,13 +124,13 @@ While the previous example realistically incorporated the basic kinematic equati
 
 \subsection{Background Physics}
 
-Drag is generally defined as the force on an object that resists its motion through a fluid.  In the case of air resistance, the fluid is a gas, and therefore the process is called aerodynamic drag.  Most of the drag force results as a response to the inertia of the fluid: the resistance it exerts to oppose being pushed aside.  This can be expressed in the equation below:
+Drag is generally defined as the force on an object that resists its motion through a fluid.  In the case of air resistance, the fluid is a gas, and therefore the process is called aerodynamic drag.  Most of the drag force results as a response to the inertia of the fluid: the resistance it exerts to oppose being pushed aside.\textsuperscript{\cite{universityphysics}}  This can be expressed in the equation below:
 
 \begin{equation} \label{eq:drag}
 f_{drag} = -\frac{1}{2}C_d \rho A v^2
 \end{equation}
 
-The equation involves a negative sign because the force of drag is always opposite the direction of motion.  $C_d$ is referred to as the drag coefficient, and is a dimensionless quantity that is used to model complex dependencies of shape, inclination, and flow conditions.  While $C_d$ is in general not an absolute constant for a given body shape, for the purpose of these simulations constant values were used.  These values are typically determined experimentally: for example, the $C_d$ of a sphere is approximately .47.  In equation \ref{eq:drag}, $\rho$ is the mass density of the fluid, in $\frac{kg}{m^3}$.  Most of the simulations in this thesis occur in air, which has a density of 1.225 $\frac{kg}{m^3}$  (at sea level and 15 \textdegree C).\textsuperscript{\cite{airfriction}}  Running the simulations in different fluids can be simulated by changing $\rho$ to higher values (water, for example, would have $\rho$ equal to 1000 $\frac{kg}{m^3}$).  Lastly, $A$ in equation \ref{eq:drag} is the cross-sectional area of the object.  A sphere, for example, would have a cross-sectional area of $\pi r^2 $. 
+The equation involves a negative sign because the force of drag is always opposite the direction of motion.  $C_d$ is referred to as the drag coefficient, and is a dimensionless quantity that is used to model complex dependencies of shape, inclination, and flow conditions.\textsuperscript{\cite{universityphysics}}  While $C_d$ is in general not an absolute constant for a given body shape, for the purpose of these simulations constant values were used.  These values are typically determined experimentally: for example, the $C_d$ of a sphere is approximately .47.\textsuperscript{\cite{engineering}}  In equation \ref{eq:drag}, $\rho$ is the mass density of the fluid, in $\frac{kg}{m^3}$.  Most of the simulations in this thesis occur in air, which has a density of 1.225 $\frac{kg}{m^3}$  (at sea level and 15 \textdegree C).\textsuperscript{\cite{airfriction}}  Running the simulations in different fluids can be simulated by changing $\rho$ to higher values (water, for example, would have $\rho$ equal to 1000 $\frac{kg}{m^3}$).  Lastly, $A$ in equation \ref{eq:drag} is the cross-sectional area of the object.  A sphere, for example, would have a cross-sectional area of $\pi r^2 $. 
 
 The basic kinematic equations can also be used to make the simulations more physically realistic.  
 
@@ -141,12 +141,13 @@ d = v_i t+ \frac{1}{2}at^2
 v_f = v_i + at
 \end{equation}
 
-These equations are fundamental to any physical situation and can be used to make the ball bouncing example of the previous section more realistic
+These equations are fundamental to any physical situation and can be used to make the ball bouncing example of the previous section more realistic.
 
 \subsection{The Code}
 
-Using these basic mechanics equations, the previous ball bouncing example can be made more physically accurate.  The code below shows a second simulation which incorporates air resistance:
+Using these basic mechanics equations, the previous ball bouncing example can be made more physically accurate.\textsuperscript{\cite{jsbook}}  The code below shows a second simulation which incorporates air resistance:
 
+\vspace{2mm}
 \setstretch{1}
 \begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=More advanced ball bouncing simulation, label=lst:ballbounce2]
 var x = 40;
@@ -161,7 +162,7 @@ var rho = 1.2;    // density of air would be 1.2, water would be 1000
 var dt = 60/1000;  // Time Step
 var C_d = 0.47; //Coefficient of drag for sphere
 var A = Math.PI * rSI * rSI;
-var color = 'red';
+var color = `red';
 
 window.onload = init();
   
@@ -216,7 +217,7 @@ To generate more than one object, arrays can be used.  The code below relies on 
 \begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Multiple balls bouncing simulation, label=lst:ballsbouncing]
 var g = 0.1635;
 var balls;
-var numBalls = prompt('how many balls would you like to have bounce?'); 
+var numBalls = prompt(`how many balls would you like to have bounce?'); 
 var C_d = .8;
  
 window.onload = init; 
