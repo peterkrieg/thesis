@@ -9,13 +9,13 @@
 %----------------------------------------------------------------------------------------
 
 
-While the introduction outlined the computer programming necessary to produce simulations in general, this chapter will start to deal with the physics necessary to make simulations realistic.  In this chapter, I will outline some examples of simulations with balls bouncing, and discussing the basic mechanics involved through the code.
+While the introduction outlined the computer programming necessary to produce simulations in general, this chapter will start to deal with the physics necessary to make simulations realistic.  In this chapter, I will outline some examples of simulations with bouncing balls, and discussing the basic mechanics involved through the code.
 
 
 
 \section{Basic Ball Bouncing}
 
-A ball bouncing will show the basic kinematic equations, and how they are used in the javascript code.  The following example displays a ball being dropped with an initial $v_x$, and bouncing off the walls and floor of the canvas element.  The full code is shown below:
+A bouncing ball will show the basic kinematic equations, and how they are used in the javascript code.  The following example displays a ball being dropped with an initial $v_x$, and bouncing off the walls and floor of the canvas element.  The full code is shown below:
 
 
 
@@ -83,7 +83,7 @@ This code functions by first setting up the canvas to be an appropriate size, on
 \end{equation}
 
 
-The value of g is calculated based on the fact that the simulation was run at 60 frames per second.  Time is a central component of all physics, and for the simulations to behave realistically they must carefully take that into account.  
+The value of g is calculated based on the fact that the simulation was run at 60 frames per second.  Time is a central component of all physics kinematics, and for the simulations to behave realistically they must carefully take that into account.  
 
 The remainder of the code involves 3 functions that call one another to create the flow of the simulation.  The first function, init (``initialize'') is called when the browser window is loaded(line 15).  This function simply delays the next function, onEachStep, by 16.66 ms, meaning that the function essentially runs 60 times per second, producing the desired 60 frames per second.  Line 18 accomplishes this in a crude method: simulations later will involve more sophisticated techniques.  The onEachStep function contains the instructions for each frame of the simulation.  It involves multiple conditional if-statement loops that create the illusion that the ball bounces off of the walls and floor.  
 
@@ -205,7 +205,7 @@ This code involves interesting conversions between pixels and meters.  Becuase t
 
 Once the conversion is made, the physics equations use the radius of the ball in terms of meters instead of pixels, which would give erroneous answers.
 
-\section{Multiple Balls Bouncing}
+\section{Multiple Bouncing Balls}
 
 So far, this chapter has dealt with a single object in motion.  However, physics rarely involves just one body in motion.  To demonstrate how more than one object can be displayed simultaneously, this section will show the case of multiple bouncing balls.  There is no new physics introduced in this section, but the coding concepts will be used repeatedly in later chapters of this thesis.
 
@@ -214,7 +214,7 @@ So far, this chapter has dealt with a single object in motion.  However, physics
 To generate more than one object, arrays can be used.  The code below relies on arrays and object prototypes to create the effect:
 
 \setstretch{1}
-\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Multiple balls bouncing simulation, label=lst:ballsbouncing]
+\begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Multiple bouncing balls simulation, label=lst:ballsbouncing]
 var g = 0.1635;
 var balls;
 var numBalls = prompt(`how many balls would you like to have bounce?'); 
@@ -283,14 +283,14 @@ function getRandomColor() {
 
 As with previous code listings, steps outlined in previous examples have been omitted to save space.  This code differs mainly from previous examples because of its usage of prototypes, objects, and arrays.  A separate javascript file, ball.js, contains the framework code for creating a ball.  This will be used more in future chapters, so the code doesn't have to be repeated.  This function is called a constructor function, becuase it allows other parts of code to reference the function when creating a new object.  In the case of listing \ref{lst:ballsbouncing}, an array holds an object for each different ball generated.  The number of elements in the array is equal to the number of balls, which is selected by the user through the prompt() method on line 3.  The object in each array element contains different properties for each ball: the radius, color, position, and velocities.  For every frame of the simulation, a loop cycles through each element of the balls array, changing the properties of position and velocity, on lines 29 and 36-37.  Exactly like in section 1, there is a conditional loop that controls the event of the ball colliding with a wall.  The logic of this program can be visualized in the flow chart of figure \ref{blah}.
 
-Because of repeated for loops, this program involves a bit more complexity than the previous examples.  However, the physics is very simple in this case.  Future chapters will combine more complex physics with this complexity of coding to create more advanced simuations.  These simulations can put a strain on a computer's performance: to simulate 20 balls bouncing, at 60 frames per second, 4,800 individual properties of objects need to be generated each second.  Luckily, with the modern capabilities of computers, this isn't too difficult.  
+Because of repeated for loops, this program involves a bit more complexity than the previous examples.  However, the physics is very simple in this case.  Future chapters will combine more complex physics with this complexity of coding to create more advanced simulations.  These simulations can put a strain on a computer's performance: to simulate 20  bouncing balls, at 60 frames per second, 4,800 individual properties of objects need to be generated each second.  Luckily, with the modern capabilities of computers, this isn't too difficult.  
 
 This program involves each ball having a random color and radius, when the balls array is created in the init() function.  The Math.rand() method is used for both of these, and is fundamental to the other simulations in this thesis.  The random color generator function operates by creating a hex color by randomly assigning the 16 possible entries to each entry of the 6 character string.  While completely unnecessary, this gives the program aesthetic appeal, and makes it easier to distinguish the balls.
 
 \begin{figure}[t]  
   \centering
   \includegraphics[width=15cm]{Figures/ballsbouncing.png}
-  \caption{The logic flow chart of the balls bouncing simulation}
+  \caption{The logic flow chart of the bouncing balls simulation}
   \label{blah}
 \end{figure}
 

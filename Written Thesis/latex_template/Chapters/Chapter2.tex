@@ -13,7 +13,7 @@ In this chapter, a more advanced simulation of orbiting masses will be introduce
 
 \section{Basic Orbit Path}
 
-The first simulation will deal with an example of a planet orbiting another much more massive planet.  
+The first simulation will deal with an example of a planet orbiting another larger planet.  
 
 \subsection{Background Physics}
 
@@ -101,7 +101,7 @@ function updateVelo(obj){
 \end{lstlisting}
 \setstretch{2}
 
-This program differs from previous ones used so far in that it uses two canvases instead of one.  This is essential for having the large planet remain stationary and not being erased every frame.  Instead, there can be a constant ``background'' canvas containing the stationary planet.  The code begins by initializing the variables planet and sun, where sun simply refers to any large planet that has much more mass.  The gravitational constant $G$ is intialized as a formality just to a value of 1.  G in this simulation isn't necessary, because the constant simply is used for unit conversion.  This will become clear later in this section.  When the web page is loaded, it calls the init function, just as in previous simulations.  The init function creates the sun and planet as objects from the Ball constructor function, exactly as in chapter 1.  Instead of having separate variables x and y in the previous examples, the position information can be stored into a property of each object, which is created using a different constructor function Vector2D.  
+This program differs from previous ones used so far in that it uses two canvases instead of one.  This is essential for having the large planet remain stationary and not being erased every frame.  Instead, there can be a constant ``background'' canvas containing the stationary planet.  The code begins by initializing the variables planet and sun, where sun simply refers to any planet that has much more mass.  The gravitational constant $G$ is intialized as a formality just to a value of 1.  G in this simulation isn't necessary, because the constant simply is used for unit conversion.  This will become clear later in this section.  When the web page is loaded, it calls the init function, just as in previous simulations.  The init function creates the sun and planet as objects from the Ball constructor function, exactly as in chapter 1.  Instead of having separate variables x and y in the previous examples, the position information can be stored into a property of each object, which is created using a different constructor function Vector2D.  
 
 The next function, animFrame, functions simply by initializing the javascript animation frame, and then calling the next function, onTimer.  This next function creates a variable dt by converting the unit javascript operates in (ms) to SI units of s.  It then passes the flow of the program onto the next function, move.  This function involves calling 4 functions, the first of which simply updates the position of the planet, erases the foreground canvas, and then draws the updated canvas.  This step can be analyzed through a physics kinematics equation:
 
@@ -197,7 +197,7 @@ planet.velo2D = new Vector2D(0, -80);
 \end{lstlisting}
 \setstretch{2}
 
-These changes made the larger planet look visually bigger, to simulate the effect of a massive planet.  It also positioned the object to begin right on the surface of the larger planet (in this case, 410 pixels above the center of mass of the larger planet).  To calculate the escape velocity for the situation above, equation \ref{eq:escapevelocity} can be used, but understanding some key factors:
+These changes make the larger planet look visually bigger, to simulate the effect of a massive planet.  It also positions the object to begin right on the surface of the larger planet (in this case, 410 pixels above the center of mass of the larger planet).  To calculate the escape velocity for the situation above, equation \ref{eq:escapevelocity} can be used with the following conditions:
 
 \begin{enumerate}
 \item The escape velocity calculated will be in $\frac{px}{s}$ instead of SI unit $\frac{m}{s}$
@@ -270,12 +270,12 @@ In the early 1600's Johannes Kepler proposed a series of laws that explained how
 
 
 \begin{enumerate}
-\item All planets move in ellpitical orbits with the Sun at one focus
+\item All planets move in elliptical orbits with the Sun at one focus
 \item The radius vector drawn from the Sun to a planet sweeps out equal areas in equal time intervals
 \item The square of the orbital period of any planet is proportional to the cube of the semimajor axis of the elliptical orbit
 \end{enumerate}
 
-The simulation in this section will help visualize law \#2, using the orbit program already created in section 2.1  This law can be derived by understanding the situation of a planet orbiting the sun in an ellpitical.  The sun is assumed to be much more massive so it doesn't move.  At any instant along the path of orbit, the planet has a gravitational force pointing towards the sun, and it's velocity is tangential to this inward force.  This can be visualized in figure \ref{fig:sun1}.  
+The simulation in this section will help visualize law \#2, using the orbit program already created in section 2.1  This law can be derived by understanding the situation of a planet orbiting the sun in an elliptical.  The sun is assumed to be much more massive so it doesn't move.  At any instant along the path of orbit, the planet has a gravitational force pointing towards the sun, and its velocity is tangential to this inward force.  This can be visualized in figure \ref{fig:sun1}.  
 
 \begin{figure}[h] 
 	\centering
@@ -285,7 +285,7 @@ The simulation in this section will help visualize law \#2, using the orbit prog
 \end{figure}
 
 
-The gravitational force is a central force that always points antiparallet to the radius vector $\vec{r}$.  Knowing the radius vector and force on the planet at any point, the torque can be calculated, from the equation below:
+The gravitational force is a central force that always points antiparallel to the radius vector $\vec{r}$.  Knowing the radius vector and force on the planet at any point, the torque can be calculated, from the equation below:
 
 \begin{equation}\label{eq:torque}
 \vec{\tau} = \vec{r}\times\vec{F_g} = \frac{d\vec{L}}{dt}
