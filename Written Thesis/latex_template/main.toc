@@ -40,5 +40,7 @@
 \contentsline {section}{\numberline {C.1}Simulation \#7: Rotational Motion}{44}{section.842}
 \contentsline {chapter}{\numberline {D}``Tools'' Code Used From Dev Ramtal Book}{46}{appendix.912}
 \contentsline {section}{\numberline {D.1}Vector 2D Code}{46}{section.913}
+\contentsline {section}{\numberline {D.2}Forces Code}{47}{section.971}
+\contentsline {section}{\numberline {D.3}Polygon Code}{47}{section.1004}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{48}{dummy.971}
+\contentsline {chapter}{Bibliography}{49}{dummy.1087}
