@@ -4,7 +4,7 @@
 
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 1. \emph{Chapter Title Here}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 1. \emph{Some Basic Simulations}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ A $C_r$ value of .8 was used for this simulation, which is comparable to that of
 v_f = v_i * C_r
 \end{equation}
 
-An essential part of any physics simulation involves \textit{collision detection}.  For the simple bouncing ball simulation, this is accomplished by conditional loops if the ball's position exceeds the canvas constraints.  
+An essential part of many physics simulations involves \textit{collision detection}.  For the simple bouncing ball simulation, this is accomplished by conditional loops if the ball's position exceeds the canvas constraints.  
 
 
 The last function of the program, drawBall, simply contains commands for the canvas API to draw.  While these commands can be very complicated and intricate to create the exact visual aesthetic desired, the extent of these commands is not the purpose of this thesis.  Basically, this function works by ``erasing'' the canvas of any previous graphics, and then creating a new visual with the arc() method.\textsuperscript{\cite{basichtml5}}   
