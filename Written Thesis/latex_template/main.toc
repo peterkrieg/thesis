@@ -38,5 +38,7 @@
 \contentsline {section}{\numberline {B.3}Simulation \#6: Kepler's 2nd Law}{42}{section.763}
 \contentsline {chapter}{\numberline {C}Full Code Listings From Ch. 3}{44}{appendix.841}
 \contentsline {section}{\numberline {C.1}Simulation \#7: Rotational Motion}{44}{section.842}
+\contentsline {chapter}{\numberline {D}``Tools'' Code Used From Dev Ramtal Book}{46}{appendix.912}
+\contentsline {section}{\numberline {D.1}Vector 2D Code}{46}{section.913}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{46}{dummy.912}
+\contentsline {chapter}{Bibliography}{48}{dummy.971}
