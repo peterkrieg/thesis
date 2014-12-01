@@ -8,12 +8,12 @@
 
 %----------------------------------------------------------------------------------------
 
-Previous chapters have disregarded rotational motion of solid bodies.  This chapter examines the mechanics of rigid body rotations through angular momentum fixed axis rotation.  Simulations will involve rotation of a rigid body experiencing a torque.
+Previous chapters have disregarded rotational motion of solid bodies.  This chapter examines the mechanics of rigid body rotations through angular momentum and fixed axis rotation.  Simulations will involve rotation of a rigid body experiencing a torque.
 
 
 \section{Angular Momentum and Torque}
 
-Previous sections in this thesis have simply involved translational motion.  The theorem of rigid body motion states that the displacement of any rigid body can be decomposed into two independent motions: the translation of the center of mass, and the rotation about the center of mass.  A rigid body in general is defined as an object that maintains its shape and size when a force is applied to it.\textsuperscript{\cite{klepner}}  In reality, all objects experience some level of deformation, however for the purpose of these simulations, it is safe to ignore this.  
+Previous sections in this thesis have simply involved translational motion.  The theorem of rigid body motion states that the displacement of any rigid body can be decomposed into two independent motions: the translation of the center of mass, and the rotation about the center of mass.\textsuperscript{\cite{klepner}}  A rigid body in general is defined as an object that maintains its shape and size when a force is applied to it.\textsuperscript{\cite{klepner}}  In reality, all objects experience some level of deformation, however for the purpose of these simulations, it is safe to ignore this.  
 
 To rotate a rigid body about an axis, a force must be applied to create a moment of torque, given by the equation below:
 
@@ -22,7 +22,7 @@ To rotate a rigid body about an axis, a force must be applied to create a moment
 \end{equation}
 
 
-Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to incorporate both translational and rotational motion. 
+Where $\vec{r}$ is the vector from center of rotation to the point of application of force.  If the force applied has a line of action that intersects the center of mass of the object, no torque is produced.  This is why the force of gravity normally produces no torque on objects: The force behaves as if it acts through the center of mass of the object.  To simplify the simulations involving toruqe, all objects are polygons with an assumed uniform density.  Therefore, the center of mass would always be the geometric center of the polygon.  The center of mass is essential for simulations becuase it is the reference point that allows the simulations to incorporate both translational and rotational motion. 
 
 While moment of torque represents resistance to angular motion, moment of inertia represents resistance to angular \textit{acceleration}.  For a continuous distribution of mass like a rigid body, the moment of intertia is defined by the following:
 
@@ -76,6 +76,7 @@ This formula is analagous to the common Newton's 2nd law of  $F = ma$ for rotati
 
 To create a basic simulation of an object experiencing torque, it is crucial to understand how to incorporate rotation.   This is done with the following code:
 
+\vspace{3mm}
  \setstretch{1}
 \begin{lstlisting}[breaklines=true, frame=single, numbers=left, caption=Code to rotate an object, label=lst:rotation]
 rotate: function(angle){
@@ -160,11 +161,11 @@ function updateVelo(obj){
 \end{lstlisting}
 \setstretch{2}
 
-This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  This quantity is unitless and means nothing except for an initial value that could be perceived as the force bringing the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, equation \ref{eq:Newtonaccel} stated previously.  
+This simulation involves a block that begins with an initial velocity, but zero force.  To simulate air resistance or friction, the block eventually comes to rest, programmed by a linear velocity damping coefficient.  The block begins with a certain amount of torque, represented by line 54.  Essentially, a force acted on this object moments before the animation started: creating a moment of torque, but no lasting force.  This quantity of torque is unitless and means nothing except for an initial value that could be perceived as the force bringing the block into motion.  The block experiences a negative torque througout its rotation, which could be interpreted as air resistance.  Eventually, the torque reaches 0, and the block has achieved rotational equilibrium: the angular velocity is constant.  An interesting line of code is line 59, which updates the angular acceleration of the object.  This is the line of code that connects to Newton's 2nd law for rotation, equation \ref{eq:Newtonaccel} stated previously.  The angular acceleration is calculated knowing the torque at any given point, and the moment of inertia.  The object's moment of inertia is another unitless quantity, simply used as a quantity to compare visual effects.  A larger moment of inertia represents a greater resistance to angular acceleration.  A greater moment of inertia could result from the object having a greater mass, distributed particularly farther away from the center of mass.  The center of the mass of object is initiated as the position of the object, and the vertices are drawn relative to the center of mass.  Again, we are assuming the object has a uniform density, therefore the geometric center of the object is the center of mass.  
 
 The angular velocity begins at 0 in this simulation, but is changed by the angular acceleration, similar to how the translational velocity is changed by the translational acceleration.  The object is rotated appropriately according to the method of listing \ref{lst:rotation}.  
 
-As with other simulations in this thesis, an external library of some code was used to speed up the development process.  However, this library features simple methods like finding the distance between two vectors.  These libraries of ``tools'' code are shown in the appendices.  
+As with other simulations in this thesis, an external library of some code was used to speed up the development process.  This library features simple methods like finding the distance between two vectors.  These libraries of ``tools'' code are shown in the appendices.  
 
 
 

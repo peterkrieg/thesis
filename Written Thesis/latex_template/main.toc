@@ -23,20 +23,20 @@
 \contentsline {subsection}{\numberline {2.1.2}The Code}{16}{subsection.202}
 \contentsline {section}{\numberline {2.2}Escape Velocity}{19}{section.297}
 \contentsline {section}{\numberline {2.3}Kepler's Laws}{23}{section.318}
-\contentsline {chapter}{\numberline {3}Rigid Body Motion}{28}{chapter.340}
-\contentsline {section}{\numberline {3.1}Angular Momentum and Torque}{28}{section.341}
-\contentsline {section}{\numberline {3.2}The Code}{31}{section.350}
-\contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.420}
+\contentsline {chapter}{\numberline {3}Rigid Body Motion}{28}{chapter.341}
+\contentsline {section}{\numberline {3.1}Angular Momentum and Torque}{28}{section.342}
+\contentsline {section}{\numberline {3.2}The Code}{31}{section.351}
+\contentsline {chapter}{\numberline {4}Conclusion}{34}{chapter.421}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Full Code Listings From Ch. 1}{36}{appendix.425}
-\contentsline {section}{\numberline {A.1}Simulation \#1: Simple Ball Bouncing}{36}{section.426}
-\contentsline {section}{\numberline {A.2}Simulation \#2: More Advanced Ball Bouncing}{37}{section.478}
-\contentsline {section}{\numberline {A.3}Simulation \#3: Multiple Balls Bouncing}{38}{section.539}
-\contentsline {chapter}{\numberline {B}Full Code Listings From Ch. 2}{40}{appendix.629}
-\contentsline {section}{\numberline {B.1}Simulation \#4: Simple Orbit}{40}{section.630}
-\contentsline {section}{\numberline {B.2}Simulation \#5: Escape Velocity}{41}{section.693}
-\contentsline {section}{\numberline {B.3}Simulation \#6: Kepler's 2nd Law}{42}{section.762}
-\contentsline {chapter}{\numberline {C}Full Code Listings From Ch. 3}{44}{appendix.840}
-\contentsline {section}{\numberline {C.1}Simulation \#7: Rotational Motion}{44}{section.841}
+\contentsline {chapter}{\numberline {A}Full Code Listings From Ch. 1}{36}{appendix.426}
+\contentsline {section}{\numberline {A.1}Simulation \#1: Simple Ball Bouncing}{36}{section.427}
+\contentsline {section}{\numberline {A.2}Simulation \#2: More Advanced Ball Bouncing}{37}{section.479}
+\contentsline {section}{\numberline {A.3}Simulation \#3: Multiple Balls Bouncing}{38}{section.540}
+\contentsline {chapter}{\numberline {B}Full Code Listings From Ch. 2}{40}{appendix.630}
+\contentsline {section}{\numberline {B.1}Simulation \#4: Simple Orbit}{40}{section.631}
+\contentsline {section}{\numberline {B.2}Simulation \#5: Escape Velocity}{41}{section.694}
+\contentsline {section}{\numberline {B.3}Simulation \#6: Kepler's 2nd Law}{42}{section.763}
+\contentsline {chapter}{\numberline {C}Full Code Listings From Ch. 3}{44}{appendix.841}
+\contentsline {section}{\numberline {C.1}Simulation \#7: Rotational Motion}{44}{section.842}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{46}{dummy.911}
+\contentsline {chapter}{Bibliography}{46}{dummy.912}
