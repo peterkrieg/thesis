@@ -24,7 +24,7 @@ function init() {
 	planet.pos2D = new Vector2D(500,2490);
 	// planet.velo2D = new Vector2D(0, -74);
 	// planet.velo2D = new Vector2D(0,-68);
-	planet.velo2D = new Vector2D(0,-70);
+	planet.velo2D = new Vector2D(0,-60);
 	console.log(planet.velo2D.length())
 
 	planet.draw(context);
