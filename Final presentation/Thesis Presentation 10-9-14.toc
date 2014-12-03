@@ -8,3 +8,6 @@
 \beamer@subsectionintoc {3}{1}{Simulation \#4}{11}{0}{3}
 \beamer@subsectionintoc {3}{2}{Simulation \#5}{12}{0}{3}
 \beamer@subsectionintoc {3}{3}{Simulation \#6}{16}{0}{3}
+\beamer@sectionintoc {4}{Chapter 3}{19}{0}{4}
+\beamer@subsectionintoc {4}{1}{Simulation \#3}{19}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{21}{0}{5}
