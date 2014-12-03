@@ -79,6 +79,15 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{textcomp}   %Iuse this for the degree symbol
+\usepackage{amsmath}  % use for making bigger math symbols
+\usepackage{relsize}  % use for making bigger math symbols
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -184,6 +193,14 @@ Physics Fall Semester Thesis \\ % Your institution for the title page
 \end{frame}
 
 
+
+\begin{frame}
+
+
+
+\end{frame}
+
+
 \section{Chapter 1}
 
 
@@ -210,8 +227,40 @@ Physics Fall Semester Thesis \\ % Your institution for the title page
 
 \subsection{Simulation \#1}
 \begin{frame}
+\frametitle{Simulation \#1: Basic Bouncing Ball}
+
+\begin{itemize}
+
+\item Realistic g value
+
+\item $
+9.81 \hspace{1mm}  \frac{px}{s^2}  = .1635 \hspace{1mm}  \frac{\frac{px}{s}}{frame} \hspace{1mm}  \times \hspace{1mm}  \hspace{1mm}  \frac{60 frame}{s}
+$
+
+\vspace{1cm}
+\item Coefficient of restitution ($C_r$)
+
+\item $
+C_r = \sqrt{\frac{KE_f}{KE_i}} = \sqrt{\frac{\frac{1}{2} mv_f^2}{\frac{1}{2} mv_i^2}} = \frac{v_f}{v_i}
+$
+
+\item $
+v_f = v_i * C_r
+$
 
 
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+\subsection{Simulation \#2}
+
+\begin{frame}
+\frametitle{Simulation \#2: Bouncing Ball With Aerodynamic Drag}
 
 \end{frame}
 
