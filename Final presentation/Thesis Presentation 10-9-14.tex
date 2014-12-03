@@ -262,105 +262,207 @@ $
 \begin{frame}
 \frametitle{Simulation \#2: Bouncing Ball With Aerodynamic Drag}
 
-\end{frame}
+\begin{itemize}
 
+\item $ 
+f_{drag} = -\frac{1}{2}C_d \rho A v^2
+$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{frame}
-
-\frametitle{Simulation \#1:  Study of Fluid Dynamics}
-
-$$ F_D = \frac{1}{2} \rho  v^2 C_D A$$
-
- \
- \begin{itemize}
- \item  $ F_D =   $ force of drag
+\vspace{1cm}
+\item  $ F_D =   $ force of drag
 \item $\rho = $ density of fluid
 \item $v = $ speed of object relative to fluid
-\item  $C_D = $ drag coefficient (affected by texture, shape, viscosity, lift, etc)  
+\item  $C_d = $ drag coefficient (affected by texture, shape, viscosity, lift, etc)  
 \item $ A = $ cross-sectional area of object
+
+
 \end{itemize}
 
-I will examine the drag coefficient in more detail and simulate various objects' flight path with different resistances.  
+
+
 
 
 \end{frame}
+
+
+
+
+\subsection{Simulation \#3}
+
+\begin{frame}
+\frametitle{Simulation \#3: Multiple Balls Bouncing}
+
+\begin{itemize}
+
+\item Same physics as simulation \#1
+\item Array of ball objects
+\item Each object has properties
+\item Each frame cycles through array, updating properties of each object
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{Chapter 2}
+
+
+\begin{frame}
+\frametitle{Chapter 2: Planetary Motion}
+\begin{itemize}
+\item 3 Simulations
+\item Simulation \#4: Orbits
+\item Simulation \#5: Escape velocity
+\item Simulation \#6: Kepler's 2nd law
+
+\end{itemize}
+\end{frame}
+
+\subsection{Simulation \#4}
+
+\begin{frame}
+\frametitle{Simulation \#4: Orbits}
+
+\begin{itemize}
+
+\item Newton's Law of universal gravitation
+\item $ 
+F_g = G \frac{m_1 m_2}{r^2}  $
+
+\vspace{1cm}
+\item  Euler's Method to update velocity 
+\item $
+x(t+dt) = x(t) + \frac{dx}{dt}\left(t\right) dt
+$
+
+
+
+\end{itemize}
+
+\end{frame}
+
+\subsection{Simulation \#5}
+
+
+
+\begin{frame}
+\frametitle{Simulation \#5: Escape Velocity}
+
+\begin{itemize}
+
+\item $K_i + U_{g_{i}} = K_f + U_{g_{f}}$
+
+\item $\frac{1}{2}mv_{esc}^2 - \frac{GMm}{r} = 0 + 0  $
+
+\item $
+v_{esc} = \sqrt{\frac{2GM}{r}}
+$
+
+\item $
+ v_{esc} = \sqrt{\frac{2*1 \frac{px^3}{s^2}*1000000}{410 px}} \approx 69.843 \frac{px}{s} 
+$
+\vspace{1cm}
+
+\item Used bigger canvas, and plotted velocities during planet's travel
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Simulation \#5: Escape Velocity}
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=9.5cm]{fig1.pdf}
+
+	\label{fig:data1}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Simulation \#5: Escape Velocity}
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=9.5cm]{fig2.pdf}
+
+	\label{fig:data1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simulation \#5: Escape Velocity}
+
+\begin{figure}[h] 
+	\centering
+		\includegraphics[width=9.5cm]{fig3.pdf}
+
+	\label{fig:data1}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %------------------------------------------------
 
-\begin{frame}
 
-\frametitle{Simulation \#2:  Study of Charged Particles in Magnetic Fields}
-
- $$ \mbox{Lorentz Force Law:  \hspace{1cm}}  F =    q \vec{v} \times \vec{B}$$
-
-\vspace{.5cm}
-
-I will examine situations where the magnetic field $ \vec{B} $ isn't uniform.  
-\end{frame}
 
 %------------------------------------------------
 
-\begin{frame}
 
-Other physics topics I want to pursue:  gyroscope, a complex astronomy simulation, rigid-body mechanics.   
-
-
-
-
-
-
-
-
-
-
-\end{frame}
 
 
 %\begin{frame}

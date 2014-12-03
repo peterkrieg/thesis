@@ -23,16 +23,30 @@
 \headcommand {\beamer@subsectionentry {0}{2}{2}{8}{Simulation \#2}}\headcommand {\beamer@subsectionpages {7}{7}}
 \headcommand {\slideentry {2}{2}{1}{8/8}{Simulation \#2}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{2}{2}{9/9}{Simulation \#2}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{9}{Simulation \#3}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{3}{1}{9/9}{Simulation \#3}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{2}{3}{10/10}{Simulation \#2}{0}}
+\headcommand {\sectionentry {3}{Chapter 2}{10}{Chapter 2}{0}}
+\headcommand {\beamer@sectionpages {6}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{0}{2}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{4}{11/11}{Simulation \#2}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{11}{Simulation \#4}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {3}{1}{1}{11/11}{Simulation \#4}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{2}{5}{12/12}{Simulation \#2}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{12}{Simulation \#5}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {3}{2}{1}{12/12}{Simulation \#5}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@partpages {1}{12}}
-\headcommand {\beamer@subsectionpages {8}{12}}
-\headcommand {\beamer@sectionpages {6}{12}}
-\headcommand {\beamer@documentpages {12}}
-\headcommand {\def \inserttotalframenumber {12}}
+\headcommand {\slideentry {3}{2}{2}{13/13}{Simulation \#5}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {3}{2}{3}{14/14}{Simulation \#5}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{2}{4}{15/15}{Simulation \#5}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{2}{5}{16/16}{Simulation \#5}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {1}{16}}
+\headcommand {\beamer@subsectionpages {12}{16}}
+\headcommand {\beamer@sectionpages {10}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\def \inserttotalframenumber {16}}
