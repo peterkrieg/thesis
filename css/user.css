@@ -1,0 +1,25 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+
+body{
+	text-align: center;
+	font-family: Neuton, serif;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Montserrat, sans-serif;
+	margin: 50px;
+}
+
+ul{
+	list-style: none;
+	margin: 20px;
+}
+
+
